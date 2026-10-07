@@ -417,7 +417,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     owner: false, art: null, view: 'armar', mode: 'list', q: '', cat: '', cq: '',
     sel: new Map(), disc: loadDisc(), lastGen: '', edit: null, pending: null, busy: false, loading: HOST === 'github'
   };
-  function applyData(d){ DATA = d; S.products = sortProds(d.productos || []); S.ajustes = d.ajustes || {}; S.imp = d.importacion || null; pruneSel(); }
+  function applyData(d){ DATA = d; S.products = sortProds(d.productos || []); S.ajustes = d.ajustes || {}; S.imp = d.importacion || null; pruneSel(); if (!validPct(S.disc.v) && validPct(S.ajustes.descuentoBase)) S.disc = { v: S.ajustes.descuentoBase, date: null }; }
   function pruneSel(){
     for (const [id, set] of [...S.sel]){
       const p = S.products.find(x => x.id === id);
@@ -469,7 +469,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     const e = selEntries();
     if (!e.length || d == null) return '';
     const st = S.ajustes;
-    const parts = e.map(({ p, idxs }) => [p.nombre.trim(), idxs.map(i => lineFor(p, p.presentaciones[i], d)).join('\n')].filter(Boolean).join('\n\n'));
+    const parts = e.map(({ p, idxs }) => [p.nombre.trim(), idxs.map(i => lineFor(p, p.presentaciones[i], d)).join('\n')].filter(Boolean).join('\n'));
     let q = '';
     if (e.length > 1) q = st.preguntaVarios != null ? st.preguntaVarios : DEF.preguntaVarios;
     else {
@@ -913,7 +913,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     const p = draftProduct();
     const d = disc();
     const lines = p.presentaciones.filter(v => isFinite(v.precio) && v.precio > 0).map(v => lineFor(p, v, d)).join('\n');
-    $('#ed-preview').textContent = [p.nombre || 'Título del producto', lines || (p.emoji || '🔹') + ' $0', p.pregunta].filter(Boolean).join('\n\n');
+    $('#ed-preview').textContent = [p.nombre || 'Título del producto', lines || (p.emoji || '🔹') + ' $0'].join('\n') + (p.pregunta ? '\n\n' + p.pregunta : '');
     $('#ed-prev-note').textContent = d == null ? 'Sin descuento: se muestran los precios de la web.' : `Con el ${num(d)}% de descuento. El cierre se agrega al armar el mensaje.`;
   }
   async function saveEdit(){
