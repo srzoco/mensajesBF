@@ -221,6 +221,9 @@ body:not(.owner) .owner-only{display:none!important}
 .report .scroll{max-height:260px;overflow:auto;margin-top:6px}
 .busy{position:fixed;inset:0;display:grid;place-items:center;background:rgb(0 0 0 / .25);z-index:10}
 .busy p{background:var(--surface);color:var(--ink);padding:14px 18px;border-radius:12px;font-weight:700;margin:0;box-shadow:0 4px 20px var(--shadow)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--surface-2);border-radius:12px}
+.seg button{border:0;background:transparent;color:var(--muted);font-weight:700;font-size:14px;padding:9px 8px;border-radius:9px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px var(--shadow)}
 </style>
 <script>window.ARMADOR_HOST="github";</script>
 <div id="root"></div>
@@ -396,7 +399,9 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const validPct = v => typeof v === 'number' && isFinite(v) && v >= 0 && v < 100;
   const DEF = {
     pie: '🚀 ¡Aproveche hoy el {descuento}% de descuento por pagos a BCV!\n*(los precios ya incluyen el descuento)*',
-    preguntaVarios: '¿Cuál de estos productos le interesa?'
+    preguntaVarios: '¿Cuál de estos productos le interesa?',
+    pieDivisas: 'Precios exclusivamente para pagos en: Zelle, Banesco Panamá, USDT o cash',
+    descuentoDivisas: 50
   };
   const EMOJIS = ['🧀','🥩','🍖','🐟','🦐','🐙','🫒','🍯','🥟','🔹'];
   function today(){ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -415,7 +420,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const S = {
     products: sortProds(DATA.productos || []), ajustes: DATA.ajustes || {}, imp: DATA.importacion || null,
     owner: false, art: null, view: 'armar', mode: 'list', q: '', cat: '', cq: '',
-    sel: new Map(), disc: loadDisc(), lastGen: '', edit: null, pending: null, busy: false, loading: HOST === 'github'
+    sel: new Map(), disc: loadDisc(), lastGen: '', moneda: 'bcv', edit: null, pending: null, busy: false, loading: HOST === 'github'
   };
   function applyData(d){ DATA = d; S.products = sortProds(d.productos || []); S.ajustes = d.ajustes || {}; S.imp = d.importacion || null; pruneSel(); if (!validPct(S.disc.v) && validPct(S.ajustes.descuentoBase)) S.disc = { v: S.ajustes.descuentoBase, date: null }; }
   function pruneSel(){
@@ -448,8 +453,11 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   }
 
   /* ---------- Precios y mensaje ---------- */
-  const disc = () => validPct(S.disc.v) ? S.disc.v : null;
-  const confirmed = () => disc() != null && S.disc.date === today();
+  const discBcv = () => validPct(S.disc.v) ? S.disc.v : null;
+  const confirmedBcv = () => discBcv() != null && S.disc.date === today();
+  const discUsd = () => validPct(S.ajustes.descuentoDivisas) ? S.ajustes.descuentoDivisas : DEF.descuentoDivisas;
+  const disc = () => S.moneda === 'usd' ? discUsd() : discBcv();
+  const confirmed = () => S.moneda === 'usd' ? true : confirmedBcv();
   const priceToday = (v, d) => d == null ? v.precio : v.precio * (1 - d / 100);
   function lineFor(p, v, d){
     return (p.emoji || '🔹') + ' ' + money(priceToday(v, d)) + (v.kilo ? ' el kilo' : '') + (v.texto ? ' ' + v.texto.trim() : '');
@@ -477,7 +485,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
       if (p.pregunta && !(idxs.length === 1 && p.presentaciones.length > 1)) q = p.pregunta;
     }
     if (q && q.trim()) parts.push(q.trim());
-    const pie = String(st.pie != null ? st.pie : DEF.pie).split('{descuento}').join(num(d));
+    const pie = String(S.moneda === 'usd' ? (st.pieDivisas != null ? st.pieDivisas : DEF.pieDivisas) : (st.pie != null ? st.pie : DEF.pie)).split('{descuento}').join(num(d));
     if (pie.trim()) parts.push(pie.trim());
     return parts.join('\n\n');
   }
@@ -617,6 +625,10 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
           <span id="comp-count" class="count"></span>
         </div>
         <div id="selected" class="selected"></div>
+        <div class="seg" role="group" aria-label="Forma de pago">
+          <button type="button" data-moneda="bcv" aria-pressed="true">Bolívares (BCV)</button>
+          <button type="button" data-moneda="usd" aria-pressed="false">Divisas</button>
+        </div>
         <div id="disc-warn" class="warn" hidden></div>
         <label for="msg" class="lbl">Vista previa · puedes editarla antes de copiar</label>
         <textarea id="msg" class="bubble" rows="6" placeholder="Toca los productos de la lista y aquí aparece el mensaje listo, con el descuento aplicado."></textarea>
@@ -668,6 +680,10 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
             <input id="pv" class="field" type="text">
             <label class="flabel" for="dbase">Descuento sugerido en equipos nuevos (%)</label>
             <input id="dbase" class="field" type="text" inputmode="decimal" style="max-width:8em">
+            <label class="flabel" for="pie-usd">Cierre de los mensajes en divisas</label>
+            <textarea id="pie-usd" class="field" rows="2"></textarea>
+            <label class="flabel" for="dusd">Descuento para pagos en divisas (%)</label>
+            <input id="dusd" class="field" type="text" inputmode="decimal" style="max-width:8em">
             <button type="button" class="btn primary" id="save-ajustes">Guardar ajustes</button>
           </div>
         </details>
@@ -742,12 +758,12 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
 
   function renderDisc(){
     const di = $('#disc');
-    if (document.activeElement !== di) di.value = disc() != null ? num(disc()) : '';
-    const ok = confirmed();
+    if (document.activeElement !== di) di.value = discBcv() != null ? num(discBcv()) : '';
+    const ok = confirmedBcv();
     $('#disc-box').classList.toggle('pending', !ok);
     const meta = $('#disc-meta');
     if (ok) meta.textContent = 'Confirmado hoy en este equipo';
-    else if (disc() != null) meta.innerHTML = `¿Sigue en ${num(disc())}% hoy? <button type="button" class="mini" data-confirm>Confirmar</button>`;
+    else if (discBcv() != null) meta.innerHTML = `¿Sigue en ${num(discBcv())}% hoy? <button type="button" class="mini" data-confirm>Confirmar</button>`;
     else meta.textContent = 'Escribe el descuento de hoy';
   }
 
@@ -836,6 +852,8 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     const st = S.ajustes;
     if (document.activeElement !== $('#pie')) $('#pie').value = st.pie != null ? st.pie : DEF.pie;
     if (document.activeElement !== $('#pv')) $('#pv').value = st.preguntaVarios != null ? st.preguntaVarios : DEF.preguntaVarios;
+    if (document.activeElement !== $('#pie-usd')) $('#pie-usd').value = st.pieDivisas != null ? st.pieDivisas : DEF.pieDivisas;
+    if (document.activeElement !== $('#dusd')) $('#dusd').value = num(discUsd());
     if (document.activeElement !== $('#dbase')) $('#dbase').value = validPct(st.descuentoBase) ? num(st.descuentoBase) : '';
   }
 
@@ -974,11 +992,11 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     if (S.edit) renderEdPreview();
   }
   function confirmDisc(){
-    if (disc() == null) return;
-    S.disc = { v: disc(), date: today() };
+    if (discBcv() == null) return;
+    S.disc = { v: discBcv(), date: today() };
     saveDisc();
     renderDisc(); renderComposer();
-    toast(`Descuento de hoy: ${num(disc())}%`);
+    toast(`Descuento de hoy: ${num(discBcv())}%`);
   }
 
   /* ---------- Eventos ---------- */
@@ -1016,6 +1034,13 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   $('#copy').addEventListener('click', copyMsg);
   $('#clear').addEventListener('click', () => { S.sel.clear(); stashUI(); setMode('list'); renderPicker(); renderComposer(); renderBar(); });
   $('#bar-open').addEventListener('click', () => setMode('msg'));
+  document.querySelector('.seg').addEventListener('click', e => {
+    const b = e.target.closest('[data-moneda]');
+    if (!b) return;
+    S.moneda = b.dataset.moneda;
+    for (const x of document.querySelectorAll('.seg button')) x.setAttribute('aria-pressed', String(x === b));
+    renderPicker(); renderComposer(); renderCatalog();
+  });
   $('#back').addEventListener('click', () => setMode('list'));
 
   $('#disc').addEventListener('input', e => {
@@ -1024,7 +1049,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   });
   $('#disc').addEventListener('blur', () => renderDisc());
   $('#disc').addEventListener('keydown', e => { if (e.key === 'Enter') e.target.blur(); });
-  const step = delta => { const cur = disc(); setDisc(Math.min(95, Math.max(0, Math.round((cur == null ? 40 : cur) + delta)))); };
+  const step = delta => { const cur = discBcv(); setDisc(Math.min(95, Math.max(0, Math.round((cur == null ? 40 : cur) + delta)))); };
   $('#disc-minus').addEventListener('click', () => step(-1));
   $('#disc-plus').addEventListener('click', () => step(1));
 
@@ -1053,7 +1078,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   $('#clist').addEventListener('click', e => { const b = e.target.closest('[data-edit]'); if (b) openEditor(b.dataset.edit); });
   $('#save-ajustes').addEventListener('click', () => {
     const b = parseNum($('#dbase').value);
-    const aj = Object.assign({}, S.ajustes, { pie: $('#pie').value, preguntaVarios: $('#pv').value.trim(), descuentoBase: validPct(b) ? b : null });
+    const aj = Object.assign({}, S.ajustes, { pie: $('#pie').value, preguntaVarios: $('#pv').value.trim(), descuentoBase: validPct(b) ? b : null, pieDivisas: $('#pie-usd').value, descuentoDivisas: validPct(parseNum($('#dusd').value)) ? parseNum($('#dusd').value) : DEF.descuentoDivisas });
     publishData(nextData({ ajustes: aj }), 'Ajustes guardados');
   });
 
