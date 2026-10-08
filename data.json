@@ -2282,6 +2282,21 @@
    "actualizado": "2026-10-08T14:14:33.597Z"
   },
   {
+   "id": "queso-parmesano-fratelli",
+   "nombre": "Queso Parmesano Fratelli",
+   "categoria": "Quesos",
+   "emoji": "🧀",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "Ruota de aprox. 38kg",
+     "precio": 45,
+     "kilo": true
+    }
+   ],
+   "actualizado": "2026-10-08T14:15:23.349Z"
+  },
+  {
    "id": "queso-tipo-manchego-con-trufa-1-4-torta-adarga-de-oro",
    "nombre": "Queso tipo Manchego con trufa 1/4 torta - Adarga de Oro",
    "categoria": "Quesos",
@@ -2550,19 +2565,19 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "queso-parmesano-fratelli",
-   "nombre": "Queso Parmesano Fratelli",
-   "categoria": "Quesos",
-   "emoji": "🧀",
+   "id": "caja-de-robalo-en-filet",
+   "nombre": "Caja de Robalo en Filet",
+   "categoria": "Pescados",
+   "emoji": "🐟",
    "pregunta": "",
    "presentaciones": [
     {
-     "texto": "Ruota de aprox. 38kg",
-     "precio": 45,
+     "texto": "Aprox. 12-15kg",
+     "precio": 32,
      "kilo": true
     }
    ],
-   "actualizado": "2026-10-08T14:15:23.349Z"
+   "actualizado": "2026-10-08T14:30:15.425Z"
   }
  ],
  "ajustes": {
