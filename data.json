@@ -1,28 +1,6 @@
 {
  "productos": [
   {
-   "id": "gouda-victoria",
-   "nombre": "Queso gouda Holandés Victoria Gallo Negro",
-   "categoria": "Quesos",
-   "emoji": "🧀",
-   "pregunta": "¿Prefiere la barra completa o la media barra?",
-   "actualizado": "2026-10-07T14:52:00.000Z",
-   "presentaciones": [
-    {
-     "texto": "de la barra completa (aprox. 3kg)",
-     "precio": 31,
-     "kilo": true,
-     "ref": "Queso Gouda Holandés Barra - Victoria (Gallo Negro)|||||"
-    },
-    {
-     "texto": "de la media barra (aprox. 1.5kg)",
-     "precio": 33,
-     "kilo": true,
-     "ref": "Queso Gouda Holandés 1/2 Barra - Victoria (Gallo Negro)|||||"
-    }
-   ]
-  },
-  {
    "id": "bacalao-cajas",
    "nombre": "🐟 BACALAO NORUEGO por cajas (Jangaard - talla 7/9)",
    "categoria": "Al Mayor",
@@ -279,22 +257,6 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "centro-jamon-serrano-18m-en-mitad-torre-de-nunez",
-   "nombre": "Centro Jamón Serrano 18M en Mitad - Torre de Núñez",
-   "categoria": "Charcutería",
-   "emoji": "🍖",
-   "pregunta": "",
-   "presentaciones": [
-    {
-     "texto": "",
-     "precio": 88,
-     "kilo": true,
-     "ref": "Centro Jamón Serrano 18M en Mitad - Torre de Núñez|||||"
-    }
-   ],
-   "actualizado": "2026-10-07T15:23:08.642Z"
-  },
-  {
    "id": "centro-jamon-serrano-18m-torre-de-nunez",
    "nombre": "Centro Jamón Serrano 18M - Torre de Núñez",
    "categoria": "Charcutería",
@@ -306,6 +268,22 @@
      "precio": 88,
      "kilo": true,
      "ref": "Centro Jamón Serrano 18M - Torre de Núñez|||||"
+    }
+   ],
+   "actualizado": "2026-10-07T15:23:08.642Z"
+  },
+  {
+   "id": "centro-jamon-serrano-18m-en-mitad-torre-de-nunez",
+   "nombre": "Centro Jamón Serrano 18M en Mitad - Torre de Núñez",
+   "categoria": "Charcutería",
+   "emoji": "🍖",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "",
+     "precio": 88,
+     "kilo": true,
+     "ref": "Centro Jamón Serrano 18M en Mitad - Torre de Núñez|||||"
     }
    ],
    "actualizado": "2026-10-07T15:23:08.642Z"
@@ -637,6 +615,22 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
+   "id": "loncheados-torre-de-nunez",
+   "nombre": "Loncheados - Torre de Núñez",
+   "categoria": "Charcutería",
+   "emoji": "🍖",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "300g · Jamón Serrano 15M",
+     "precio": 48,
+     "kilo": false,
+     "ref": "Loncheados - Torre de Núñez||300g|Jamón Serrano 15M||"
+    }
+   ],
+   "actualizado": "2026-10-07T15:23:08.642Z"
+  },
+  {
    "id": "loncheados-100g-costa-brava",
    "nombre": "Loncheados 100g - Costa Brava",
    "categoria": "Charcutería",
@@ -684,22 +678,6 @@
      "precio": 10,
      "kilo": false,
      "ref": "Loncheados 100g - Costa Brava|||Salchichón Pimienta||"
-    }
-   ],
-   "actualizado": "2026-10-07T15:23:08.642Z"
-  },
-  {
-   "id": "loncheados-torre-de-nunez",
-   "nombre": "Loncheados - Torre de Núñez",
-   "categoria": "Charcutería",
-   "emoji": "🍖",
-   "pregunta": "",
-   "presentaciones": [
-    {
-     "texto": "300g · Jamón Serrano 15M",
-     "precio": 48,
-     "kilo": false,
-     "ref": "Loncheados - Torre de Núñez||300g|Jamón Serrano 15M||"
     }
    ],
    "actualizado": "2026-10-07T15:23:08.642Z"
@@ -1145,22 +1123,6 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "aceite-de-oliva-250ml-visciano",
-   "nombre": "Aceite de Oliva (250ml)- Visciano",
-   "categoria": "Grasas",
-   "emoji": "🫒",
-   "pregunta": "",
-   "presentaciones": [
-    {
-     "texto": "Spray 250ml",
-     "precio": 20,
-     "kilo": false,
-     "ref": "Aceite de Oliva (250ml)- Visciano||Spray 250ml|||"
-    }
-   ],
-   "actualizado": "2026-10-07T15:23:08.642Z"
-  },
-  {
    "id": "aceite-de-oliva-rafael-salgado",
    "nombre": "Aceite de Oliva - Rafael Salgado",
    "categoria": "Grasas",
@@ -1194,6 +1156,22 @@
      "precio": 30,
      "kilo": false,
      "ref": "Aceite de Oliva - Tierra Santa||1L|||"
+    }
+   ],
+   "actualizado": "2026-10-07T15:23:08.642Z"
+  },
+  {
+   "id": "aceite-de-oliva-250ml-visciano",
+   "nombre": "Aceite de Oliva (250ml)- Visciano",
+   "categoria": "Grasas",
+   "emoji": "🫒",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "Spray 250ml",
+     "precio": 20,
+     "kilo": false,
+     "ref": "Aceite de Oliva (250ml)- Visciano||Spray 250ml|||"
     }
    ],
    "actualizado": "2026-10-07T15:23:08.642Z"
@@ -2171,20 +2149,26 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "queso-grana-padano-dop-en-cuna",
-   "nombre": "Queso Grana Padano DOP en cuña",
+   "id": "gouda-victoria",
+   "nombre": "Queso gouda Holandés Victoria Gallo Negro",
    "categoria": "Quesos",
    "emoji": "🧀",
-   "pregunta": "",
+   "pregunta": "¿Prefiere la barra completa o la media barra?",
+   "actualizado": "2026-10-07T14:52:00.000Z",
    "presentaciones": [
     {
-     "texto": "",
-     "precio": 60,
+     "texto": "de la barra completa (aprox. 3kg)",
+     "precio": 31,
      "kilo": true,
-     "ref": "Queso Grana Padano DOP en cuña|||||"
+     "ref": "Queso Gouda Holandés Barra - Victoria (Gallo Negro)|||||"
+    },
+    {
+     "texto": "de la media barra (aprox. 1.5kg)",
+     "precio": 33,
+     "kilo": true,
+     "ref": "Queso Gouda Holandés 1/2 Barra - Victoria (Gallo Negro)|||||"
     }
-   ],
-   "actualizado": "2026-10-07T15:23:08.642Z"
+   ]
   },
   {
    "id": "queso-grana-padano-mantova",
@@ -2198,6 +2182,22 @@
      "precio": 64,
      "kilo": true,
      "ref": "Queso Grana Padano - Mantova|||||"
+    }
+   ],
+   "actualizado": "2026-10-07T15:23:08.642Z"
+  },
+  {
+   "id": "queso-grana-padano-dop-en-cuna",
+   "nombre": "Queso Grana Padano DOP en cuña",
+   "categoria": "Quesos",
+   "emoji": "🧀",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "",
+     "precio": 60,
+     "kilo": true,
+     "ref": "Queso Grana Padano DOP en cuña|||||"
     }
    ],
    "actualizado": "2026-10-07T15:23:08.642Z"
@@ -2407,22 +2407,6 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "papas-fritas-congeladas-1kg-fresqual",
-   "nombre": "Papas Fritas Congeladas 1kg - Fresqüal",
-   "categoria": "Vegetales y Frutas",
-   "emoji": "🍟",
-   "pregunta": "",
-   "presentaciones": [
-    {
-     "texto": "",
-     "precio": 8,
-     "kilo": false,
-     "ref": "Papas Fritas Congeladas 1kg - Fresqüal|||||"
-    }
-   ],
-   "actualizado": "2026-10-07T15:23:08.642Z"
-  },
-  {
    "id": "papas-fritas-congeladas-mydibel",
    "nombre": "Papas Fritas Congeladas - Mydibel",
    "categoria": "Vegetales y Frutas",
@@ -2434,6 +2418,22 @@
      "precio": 8,
      "kilo": false,
      "ref": "Papas Fritas Congeladas - Mydibel|||||1kg"
+    }
+   ],
+   "actualizado": "2026-10-07T15:23:08.642Z"
+  },
+  {
+   "id": "papas-fritas-congeladas-1kg-fresqual",
+   "nombre": "Papas Fritas Congeladas 1kg - Fresqüal",
+   "categoria": "Vegetales y Frutas",
+   "emoji": "🍟",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "",
+     "precio": 8,
+     "kilo": false,
+     "ref": "Papas Fritas Congeladas 1kg - Fresqüal|||||"
     }
    ],
    "actualizado": "2026-10-07T15:23:08.642Z"
@@ -2538,7 +2538,9 @@
  "ajustes": {
   "pie": "🚀 ¡Aproveche hoy el {descuento}% de descuento por pagos a BCV!\n*(los precios ya incluyen el descuento)*",
   "preguntaVarios": "¿Cuál de estos productos le interesa?",
-  "descuentoBase": 40
+  "descuentoBase": 40,
+  "pieDivisas": "Precios exclusivamente para pagos en: Zelle, Banesco Panamá, USDT o cash",
+  "descuentoDivisas": 50
  },
  "importacion": {
   "fecha": "2026-10-07T15:23:08.642Z",
