@@ -2267,6 +2267,21 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
+   "id": "queso-parmesano-castelli",
+   "nombre": "Queso Parmesano Castelli",
+   "categoria": "Quesos",
+   "emoji": "🧀",
+   "pregunta": "",
+   "presentaciones": [
+    {
+     "texto": "Ruota de aprox. 38kg",
+     "precio": 41,
+     "kilo": true
+    }
+   ],
+   "actualizado": "2026-10-08T14:14:33.597Z"
+  },
+  {
    "id": "queso-tipo-manchego-con-trufa-1-4-torta-adarga-de-oro",
    "nombre": "Queso tipo Manchego con trufa 1/4 torta - Adarga de Oro",
    "categoria": "Quesos",
@@ -2535,19 +2550,19 @@
    "actualizado": "2026-10-07T15:23:08.642Z"
   },
   {
-   "id": "queso-parmesano-castelli",
-   "nombre": "Queso Parmesano Castelli",
+   "id": "queso-parmesano-fratelli",
+   "nombre": "Queso Parmesano Fratelli",
    "categoria": "Quesos",
    "emoji": "🧀",
    "pregunta": "",
    "presentaciones": [
     {
      "texto": "Ruota de aprox. 38kg",
-     "precio": 41,
+     "precio": 45,
      "kilo": true
     }
    ],
-   "actualizado": "2026-10-08T14:14:33.597Z"
+   "actualizado": "2026-10-08T14:15:23.349Z"
   }
  ],
  "ajustes": {
