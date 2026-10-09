@@ -1,0 +1,58 @@
+{
+ "revisado": "2026-10-09T13:44:54+00:00",
+ "binance": 1020.335,
+ "binancePrecios": [
+  1023.0,
+  1019.005,
+  1019.0
+ ],
+ "bcv": 875.6505,
+ "fuenteBcv": "ve.dolarapi.com",
+ "factor": 0.582615,
+ "descuento": 39,
+ "actualizado": "2026-10-09T13:44:54+00:00",
+ "manual": false,
+ "error": null,
+ "binanceAnuncios": [
+  {
+   "precio": 1023.0,
+   "anunciante": "你就变得更强",
+   "promocionado": false
+  },
+  {
+   "precio": 1019.005,
+   "anunciante": "Trust-Broker",
+   "promocionado": false
+  },
+  {
+   "precio": 1019.0,
+   "anunciante": "KaioSama16",
+   "promocionado": false
+  },
+  {
+   "precio": 1019.0,
+   "anunciante": "Vitatech",
+   "promocionado": false
+  },
+  {
+   "precio": 1018.5,
+   "anunciante": "贝HarveySpecter贝",
+   "promocionado": false
+  },
+  {
+   "precio": 1018.1,
+   "anunciante": "LordCambios",
+   "promocionado": false
+  },
+  {
+   "precio": 1018.01,
+   "anunciante": "Luis8A1306",
+   "promocionado": false
+  },
+  {
+   "precio": 1018.0,
+   "anunciante": "VZLAMundialista",
+   "promocionado": false
+  }
+ ]
+}
