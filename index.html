@@ -254,6 +254,7 @@ body.usd #usd-badge{display:inline-block}
 .disc-actions{grid-column:1 / -1;display:flex;gap:8px;margin-top:4px}
 .mini:disabled{opacity:.5;cursor:wait}
 .disc .disc-ctl input::placeholder{color:var(--gold-line)}
+.disc-rates{white-space:pre-line}
 </style>
 <script>window.ARMADOR_HOST="github";</script>
 <div id="root"></div>
@@ -816,7 +817,16 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     $('#disc-label').textContent = 'Descuento BCV de hoy';
     const meta = $('#disc-meta'), rates = $('#disc-rates');
     const ultima = hasTasas() ? 'Última actualización: ' + fmtWhen(S.tasas.actualizado) + (S.tasas.manual ? ' (a mano)' : '') : 'Sin actualizaciones automáticas todavía';
-    rates.textContent = hasTasas() && !S.tasas.manual && S.tasas.binance ? `Binance ${fmtRate(S.tasas.binance)} ÷ BCV ${fmtRate(S.tasas.bcv)} ÷ 2, menos 2 puntos` : '';
+    const T = S.tasas || {};
+    const bAt = T.binanceActualizado || (T.binance ? T.actualizado : null);
+    const cAt = T.bcvActualizado || (T.bcv ? T.actualizado : null);
+    const linea = [
+      T.bcv ? `BCV ${fmtRate(T.bcv)}${cAt ? ' · ' + fmtWhen(cAt) : ''}` : '',
+      bAt ? `Binance · ${fmtWhen(bAt)}` : ''
+    ].filter(Boolean).join('\n');
+    rates.textContent = S.owner && T.binance && T.bcv
+      ? `Binance ${fmtRate(T.binance)} ÷ BCV ${fmtRate(T.bcv)} ÷ 2, menos 2 puntos\n` + linea
+      : linea;
     if (overrideToday()){
       setHTML(meta, `<span>Cambiado a mano en este equipo${autoToday() ? ' · automático: ' + num(S.tasas.descuento) + '%' : ''}</span>` + (autoToday() ? ' <button type="button" class="mini" data-auto>Volver al automático</button>' : '') + `<span class="sub-line">${esc(ultima)}</span>`);
     } else if (autoToday()){
