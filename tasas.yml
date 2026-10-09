@@ -1,0 +1,113 @@
+name: Actualizar tasas
+
+on:
+  schedule:
+    - cron: "30 12 * * *"  # 8:30 a. m. Caracas
+    - cron: "0 13 * * *"   # 9:00 a. m. Caracas
+  workflow_dispatch: {}    # boton "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tasas
+  cancel-in-progress: false
+
+jobs:
+  tasas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Calcular descuento
+        run: |
+          python3 - <<'PY'
+          import json, math, re, ssl, urllib.request
+          from datetime import datetime, timezone
+
+          UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          ahora = datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+          try:
+              prev = json.load(open("tasas.json", encoding="utf-8"))
+          except Exception:
+              prev = {}
+
+          def http(url, data=None):
+              body = json.dumps(data).encode() if data is not None else None
+              req = urllib.request.Request(url, data=body, headers={"User-Agent": UA, "Content-Type": "application/json", "Accept": "application/json, text/html"})
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  return r.read().decode("utf-8", "replace")
+
+          def es_promocionado(item):
+              # Binance marca los anuncios promocionados con campos que contienen "promot"; se descartan.
+              for bloque in (item, item.get("adv") or {}):
+                  for k, v in bloque.items():
+                      if "promot" in k.lower() and v not in (None, False, 0, "", "0", [], {}):
+                          return True
+              return False
+
+          # --- Binance P2P, pestana "Vender" USDT/VES: promedio de los 3 primeros precios, sin anuncios promocionados
+          binance, usados, vistos, err_b = None, [], [], None
+          try:
+              payload = {"fiat": "VES", "asset": "USDT", "tradeType": "SELL", "page": 1, "rows": 20,
+                         "payTypes": [], "publisherType": None, "merchantCheck": False, "countries": [],
+                         "proMerchantAds": False, "shieldMerchantAds": False, "transAmount": ""}
+              res = json.loads(http("https://p2p.binance.com/bapi/c2c/v2/friendly/c2c/adv/search", payload))
+              for it in res.get("data") or []:
+                  adv = it.get("adv") or {}
+                  precio = float(adv.get("price"))
+                  promo = es_promocionado(it)
+                  nombre = (it.get("advertiser") or {}).get("nickName", "")
+                  vistos.append({"precio": precio, "anunciante": nombre, "promocionado": promo})
+                  if not promo and len(usados) < 3:
+                      usados.append(precio)
+              if len(usados) == 3:
+                  binance = round(sum(usados) / 3, 4)
+              else:
+                  err_b = "Binance devolvio menos de 3 anuncios validos"
+          except Exception as e:
+              err_b = "Binance: " + str(e)[:200]
+
+          # --- Tasa oficial BCV
+          bcv, fuente_bcv, err_c = None, None, None
+          try:
+              j = json.loads(http("https://ve.dolarapi.com/v1/dolares/oficial"))
+              bcv = float(j.get("promedio") or j.get("venta"))
+              fuente_bcv = "ve.dolarapi.com"
+          except Exception as e:
+              err_c = "dolarapi: " + str(e)[:150]
+              try:
+                  html = http("https://www.bcv.org.ve/")
+                  m = re.search(r'id="dolar".*?<strong>\s*([\d.,]+)\s*</strong>', html, re.S)
+                  bcv = float(m.group(1).replace(".", "").replace(",", "."))
+                  fuente_bcv, err_c = "bcv.org.ve", None
+              except Exception as e2:
+                  err_c += " | bcv.org.ve: " + str(e2)[:150]
+
+          out = dict(prev)
+          out["revisado"] = ahora
+          errores = [x for x in (err_b, err_c) if x]
+          if binance and bcv:
+              factor = binance / bcv / 2
+              desc = math.floor((1 - factor) * 100 + 1e-9) - 2  # entero hacia abajo, menos 2 puntos
+              if 0 <= desc <= 80:
+                  out.update({"binance": binance, "binancePrecios": usados, "bcv": bcv, "fuenteBcv": fuente_bcv,
+                              "factor": round(factor, 6), "descuento": desc, "actualizado": ahora, "manual": False})
+              else:
+                  errores.append(f"Descuento fuera de rango ({desc}%): no se aplico")
+          out["error"] = " ; ".join(errores) or None
+          out["binanceAnuncios"] = vistos[:8]
+          json.dump(out, open("tasas.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+          print(json.dumps(out, ensure_ascii=False, indent=1))
+          PY
+
+      - name: Guardar
+        run: |
+          git config user.name "armador-bot"
+          git config user.email "armador-bot@users.noreply.github.com"
+          git add tasas.json
+          git commit -m "Tasas $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1
