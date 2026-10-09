@@ -88,6 +88,10 @@ jobs:
 
           out = dict(prev)
           out["revisado"] = ahora
+          if binance:
+              out.update({"binance": binance, "binancePrecios": usados, "binanceActualizado": ahora})
+          if bcv:
+              out.update({"bcv": bcv, "fuenteBcv": fuente_bcv, "bcvActualizado": ahora})
           errores = [x for x in (err_b, err_c) if x]
           if binance and bcv:
               factor = binance / bcv / 2
