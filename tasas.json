@@ -1,58 +1,60 @@
 {
- "revisado": "2026-10-09T13:45:21+00:00",
- "binance": 1020.335,
+ "revisado": "2026-10-10T12:44:43+00:00",
+ "binance": 1014.42,
  "binancePrecios": [
-  1023.0,
-  1019.005,
-  1019.0
+  1015.26,
+  1014.0,
+  1014.0
  ],
  "bcv": 875.6505,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.582615,
- "descuento": 39,
- "actualizado": "2026-10-09T13:45:21+00:00",
+ "factor": 0.579238,
+ "descuento": 40,
+ "actualizado": "2026-10-10T12:44:43+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1023.0,
-   "anunciante": "你就变得更强",
+   "precio": 1015.26,
+   "anunciante": "elianderm792",
    "promocionado": false
   },
   {
-   "precio": 1019.005,
-   "anunciante": "Trust-Broker",
+   "precio": 1014.0,
+   "anunciante": "FAMCAST",
    "promocionado": false
   },
   {
-   "precio": 1019.0,
-   "anunciante": "KaioSama16",
+   "precio": 1014.0,
+   "anunciante": "TorvenHedge",
    "promocionado": false
   },
   {
-   "precio": 1019.0,
-   "anunciante": "Vitatech",
+   "precio": 1013.51,
+   "anunciante": "NEEMESIS",
    "promocionado": false
   },
   {
-   "precio": 1018.5,
-   "anunciante": "贝HarveySpecter贝",
+   "precio": 1013.5,
+   "anunciante": "HonorYNegocioP2P",
    "promocionado": false
   },
   {
-   "precio": 1018.1,
-   "anunciante": "LordCambios",
+   "precio": 1013.5,
+   "anunciante": "FUERZA_ELITE",
    "promocionado": false
   },
   {
-   "precio": 1018.01,
-   "anunciante": "Luis8A1306",
+   "precio": 1013.1,
+   "anunciante": "cambiosmistesoros",
    "promocionado": false
   },
   {
-   "precio": 1018.0,
-   "anunciante": "VZLAMundialista",
+   "precio": 1013.01,
+   "anunciante": "JMCrip26",
    "promocionado": false
   }
- ]
+ ],
+ "binanceActualizado": "2026-10-10T12:44:43+00:00",
+ "bcvActualizado": "2026-10-10T12:44:43+00:00"
 }
