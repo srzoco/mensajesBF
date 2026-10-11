@@ -1,60 +1,60 @@
 {
- "revisado": "2026-10-10T13:06:08+00:00",
- "binance": 1014.2533,
+ "revisado": "2026-10-11T12:45:52+00:00",
+ "binance": 1021.6717,
  "binancePrecios": [
-  1015.26,
-  1014.0,
-  1013.5
+  1040.0,
+  1013.0,
+  1012.015
  ],
  "bcv": 875.6505,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.579143,
- "descuento": 40,
- "actualizado": "2026-10-10T13:06:08+00:00",
+ "factor": 0.583379,
+ "descuento": 39,
+ "actualizado": "2026-10-11T12:45:52+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1015.26,
-   "anunciante": "elianderm792",
-   "promocionado": false
-  },
-  {
-   "precio": 1014.0,
-   "anunciante": "Trust-Broker",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.5,
-   "anunciante": "HonorYNegocioP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.5,
-   "anunciante": "NEEMESIS",
+   "precio": 1040.0,
+   "anunciante": "NexxusGlobalTradeP2P",
    "promocionado": false
   },
   {
    "precio": 1013.0,
-   "anunciante": "Usuario042",
+   "anunciante": "carolinacwf",
    "promocionado": false
   },
   {
-   "precio": 1013.0,
-   "anunciante": "Cambios Skayle",
+   "precio": 1012.015,
+   "anunciante": "securitylc",
    "promocionado": false
   },
   {
-   "precio": 1012.75,
-   "anunciante": "MultiEx",
+   "precio": 1012.0,
+   "anunciante": "Cr-Seven",
    "promocionado": false
   },
   {
-   "precio": 1012.72,
-   "anunciante": "greca10",
+   "precio": 1011.91,
+   "anunciante": "Hotspur_",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.5,
+   "anunciante": "Odiseo_09",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.36,
+   "anunciante": "ElCorreCamino",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.0,
+   "anunciante": "CryptoSickoP2P",
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-10T13:06:08+00:00",
- "bcvActualizado": "2026-10-10T13:06:08+00:00"
+ "binanceActualizado": "2026-10-11T12:45:52+00:00",
+ "bcvActualizado": "2026-10-11T12:45:52+00:00"
 }
