@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-11T12:45:52+00:00",
+ "revisado": "2026-10-11T13:07:07+00:00",
  "binance": 1021.6717,
  "binancePrecios": [
   1040.0,
@@ -10,7 +10,7 @@
  "fuenteBcv": "ve.dolarapi.com",
  "factor": 0.583379,
  "descuento": 39,
- "actualizado": "2026-10-11T12:45:52+00:00",
+ "actualizado": "2026-10-11T13:07:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -31,12 +31,17 @@
   },
   {
    "precio": 1012.0,
-   "anunciante": "Cr-Seven",
+   "anunciante": "BlackVaultt",
    "promocionado": false
   },
   {
    "precio": 1011.91,
    "anunciante": "Hotspur_",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.51,
+   "anunciante": "Cr-Seven",
    "promocionado": false
   },
   {
@@ -48,13 +53,8 @@
    "precio": 1011.36,
    "anunciante": "ElCorreCamino",
    "promocionado": false
-  },
-  {
-   "precio": 1011.0,
-   "anunciante": "CryptoSickoP2P",
-   "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-11T12:45:52+00:00",
- "bcvActualizado": "2026-10-11T12:45:52+00:00"
+ "binanceActualizado": "2026-10-11T13:07:07+00:00",
+ "bcvActualizado": "2026-10-11T13:07:07+00:00"
 }
