@@ -1,60 +1,60 @@
 {
- "revisado": "2026-10-12T13:08:55+00:00",
- "binance": 1013.6667,
+ "revisado": "2026-10-12T13:26:13+00:00",
+ "binance": 1013.07,
  "binancePrecios": [
-  1015.0,
-  1013.0,
+  1013.11,
+  1013.1,
   1013.0
  ],
  "bcv": 875.6505,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.578808,
+ "factor": 0.578467,
  "descuento": 40,
- "actualizado": "2026-10-12T13:08:55+00:00",
+ "actualizado": "2026-10-12T13:26:13+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1015.0,
-   "anunciante": "CAMBIOBEMOVIL",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.0,
-   "anunciante": "Dp-JA",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.0,
-   "anunciante": "Josetoro88",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.0,
-   "anunciante": "BlackVaultt",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.6,
-   "anunciante": "Hotspur_",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.515,
-   "anunciante": "AL110490",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.51,
+   "precio": 1013.11,
    "anunciante": "-TSxRV-",
    "promocionado": false
   },
   {
-   "precio": 1012.51,
+   "precio": 1013.1,
+   "anunciante": "你就变得更强",
+   "promocionado": false
+  },
+  {
+   "precio": 1013.0,
+   "anunciante": "CoorpLogistic",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.62,
    "anunciante": "CAMBIOS-JHONKY",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.55,
+   "anunciante": "Money77ves",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.5,
+   "anunciante": "Bianchiplus",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.5,
+   "anunciante": "FUERZA_ELITE",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.4,
+   "anunciante": "Capital_Carreno",
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-12T13:08:55+00:00",
- "bcvActualizado": "2026-10-12T13:08:55+00:00"
+ "binanceActualizado": "2026-10-12T13:26:13+00:00",
+ "bcvActualizado": "2026-10-12T13:26:13+00:00"
 }
