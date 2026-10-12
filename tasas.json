@@ -1,27 +1,22 @@
 {
- "revisado": "2026-10-12T13:08:06+00:00",
- "binance": 1013.8993,
+ "revisado": "2026-10-12T13:08:55+00:00",
+ "binance": 1013.6667,
  "binancePrecios": [
   1015.0,
-  1013.698,
+  1013.0,
   1013.0
  ],
  "bcv": 875.6505,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.578941,
+ "factor": 0.578808,
  "descuento": 40,
- "actualizado": "2026-10-12T13:08:06+00:00",
+ "actualizado": "2026-10-12T13:08:55+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
    "precio": 1015.0,
    "anunciante": "CAMBIOBEMOVIL",
-   "promocionado": false
-  },
-  {
-   "precio": 1013.698,
-   "anunciante": "genesisrive",
    "promocionado": false
   },
   {
@@ -40,11 +35,6 @@
    "promocionado": false
   },
   {
-   "precio": 1012.8,
-   "anunciante": "TekaTrade",
-   "promocionado": false
-  },
-  {
    "precio": 1012.6,
    "anunciante": "Hotspur_",
    "promocionado": false
@@ -53,8 +43,18 @@
    "precio": 1012.515,
    "anunciante": "AL110490",
    "promocionado": false
+  },
+  {
+   "precio": 1012.51,
+   "anunciante": "-TSxRV-",
+   "promocionado": false
+  },
+  {
+   "precio": 1012.51,
+   "anunciante": "CAMBIOS-JHONKY",
+   "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-12T13:08:06+00:00",
- "bcvActualizado": "2026-10-12T13:08:06+00:00"
+ "binanceActualizado": "2026-10-12T13:08:55+00:00",
+ "bcvActualizado": "2026-10-12T13:08:55+00:00"
 }
