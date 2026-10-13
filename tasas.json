@@ -1,16 +1,16 @@
 {
- "revisado": "2026-10-13T12:52:47+00:00",
- "binance": 1015.4333,
+ "revisado": "2026-10-13T13:15:43+00:00",
+ "binance": 1013.9333,
  "binancePrecios": [
   1018.0,
-  1016.3,
-  1012.0
+  1012.0,
+  1011.8
  ],
  "bcv": 876.7976,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.579058,
+ "factor": 0.578203,
  "descuento": 40,
- "actualizado": "2026-10-13T12:52:47+00:00",
+ "actualizado": "2026-10-13T13:15:43+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -20,18 +20,18 @@
    "promocionado": false
   },
   {
-   "precio": 1016.3,
-   "anunciante": "Solido-P2P",
-   "promocionado": false
-  },
-  {
    "precio": 1012.0,
    "anunciante": "Comercializadora_MAC",
    "promocionado": false
   },
   {
-   "precio": 1011.1,
-   "anunciante": "Userfc45",
+   "precio": 1011.8,
+   "anunciante": "eladio20",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.0,
+   "anunciante": "CROMOSOMA-21",
    "promocionado": false
   },
   {
@@ -40,8 +40,8 @@
    "promocionado": false
   },
   {
-   "precio": 1010.5,
-   "anunciante": "Smolder-",
+   "precio": 1010.15,
+   "anunciante": "TheOchoa",
    "promocionado": false
   },
   {
@@ -55,6 +55,6 @@
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-13T12:52:47+00:00",
- "bcvActualizado": "2026-10-13T12:52:47+00:00"
+ "binanceActualizado": "2026-10-13T13:15:43+00:00",
+ "bcvActualizado": "2026-10-13T13:15:43+00:00"
 }
