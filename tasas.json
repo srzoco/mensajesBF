@@ -1,60 +1,60 @@
 {
- "revisado": "2026-10-12T13:26:13+00:00",
- "binance": 1013.07,
+ "revisado": "2026-10-13T12:52:47+00:00",
+ "binance": 1015.4333,
  "binancePrecios": [
-  1013.11,
-  1013.1,
-  1013.0
+  1018.0,
+  1016.3,
+  1012.0
  ],
- "bcv": 875.6505,
+ "bcv": 876.7976,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.578467,
+ "factor": 0.579058,
  "descuento": 40,
- "actualizado": "2026-10-12T13:26:13+00:00",
+ "actualizado": "2026-10-13T12:52:47+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1013.11,
-   "anunciante": "-TSxRV-",
+   "precio": 1018.0,
+   "anunciante": "Dp-JA",
    "promocionado": false
   },
   {
-   "precio": 1013.1,
-   "anunciante": "你就变得更强",
+   "precio": 1016.3,
+   "anunciante": "Solido-P2P",
    "promocionado": false
   },
   {
-   "precio": 1013.0,
+   "precio": 1012.0,
+   "anunciante": "Comercializadora_MAC",
+   "promocionado": false
+  },
+  {
+   "precio": 1011.1,
+   "anunciante": "Userfc45",
+   "promocionado": false
+  },
+  {
+   "precio": 1010.702,
+   "anunciante": "tradiven",
+   "promocionado": false
+  },
+  {
+   "precio": 1010.5,
+   "anunciante": "Smolder-",
+   "promocionado": false
+  },
+  {
+   "precio": 1010.11,
+   "anunciante": "EXCELENTE-",
+   "promocionado": false
+  },
+  {
+   "precio": 1010.0,
    "anunciante": "CoorpLogistic",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.62,
-   "anunciante": "CAMBIOS-JHONKY",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.55,
-   "anunciante": "Money77ves",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.5,
-   "anunciante": "Bianchiplus",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.5,
-   "anunciante": "FUERZA_ELITE",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.4,
-   "anunciante": "Capital_Carreno",
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-12T13:26:13+00:00",
- "bcvActualizado": "2026-10-12T13:26:13+00:00"
+ "binanceActualizado": "2026-10-13T12:52:47+00:00",
+ "bcvActualizado": "2026-10-13T12:52:47+00:00"
 }
