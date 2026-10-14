@@ -1,60 +1,60 @@
 {
- "revisado": "2026-10-13T13:15:43+00:00",
- "binance": 1013.9333,
+ "revisado": "2026-10-14T13:07:00+00:00",
+ "binance": 1009.0003,
  "binancePrecios": [
-  1018.0,
-  1012.0,
-  1011.8
+  1011.0,
+  1008.001,
+  1008.0
  ],
- "bcv": 876.7976,
+ "bcv": 877.9023,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.578203,
+ "factor": 0.574665,
  "descuento": 40,
- "actualizado": "2026-10-13T13:15:43+00:00",
+ "actualizado": "2026-10-14T13:07:00+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1018.0,
-   "anunciante": "Dp-JA",
-   "promocionado": false
-  },
-  {
-   "precio": 1012.0,
-   "anunciante": "Comercializadora_MAC",
-   "promocionado": false
-  },
-  {
-   "precio": 1011.8,
-   "anunciante": "eladio20",
-   "promocionado": false
-  },
-  {
    "precio": 1011.0,
-   "anunciante": "CROMOSOMA-21",
+   "anunciante": "oscaargonzalez",
    "promocionado": false
   },
   {
-   "precio": 1010.702,
-   "anunciante": "tradiven",
+   "precio": 1008.001,
+   "anunciante": "Condor_2",
    "promocionado": false
   },
   {
-   "precio": 1010.15,
-   "anunciante": "TheOchoa",
+   "precio": 1008.0,
+   "anunciante": "Umbrella2503",
    "promocionado": false
   },
   {
-   "precio": 1010.11,
-   "anunciante": "EXCELENTE-",
+   "precio": 1008.0,
+   "anunciante": "Vitatech",
    "promocionado": false
   },
   {
-   "precio": 1010.0,
-   "anunciante": "CoorpLogistic",
+   "precio": 1007.5,
+   "anunciante": "GAMBINO-",
+   "promocionado": false
+  },
+  {
+   "precio": 1007.5,
+   "anunciante": "Trust-Broker",
+   "promocionado": false
+  },
+  {
+   "precio": 1007.0,
+   "anunciante": "IA_CORPORATE",
+   "promocionado": false
+  },
+  {
+   "precio": 1007.0,
+   "anunciante": "VZLAMundialista",
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-13T13:15:43+00:00",
- "bcvActualizado": "2026-10-13T13:15:43+00:00"
+ "binanceActualizado": "2026-10-14T13:07:00+00:00",
+ "bcvActualizado": "2026-10-14T13:07:00+00:00"
 }
