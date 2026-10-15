@@ -20,6 +20,8 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # siempre la version mas reciente, tambien al reintentar
 
       - name: Calcular descuento
         run: |
@@ -125,7 +127,15 @@ jobs:
         run: |
           git config user.name "armador-bot"
           git config user.email "armador-bot@users.noreply.github.com"
-          git add tasas.json
-          git commit -m "Tasas $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
-          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          cp tasas.json "$RUNNER_TEMP/tasas.json"
+          for i in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/tasas.json" tasas.json
+            git add tasas.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Tasas $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
           exit 1
