@@ -1,27 +1,22 @@
 {
- "revisado": "2026-10-15T13:10:56+00:00",
- "binance": 1025.3333,
+ "revisado": "2026-10-15T13:31:22+00:00",
+ "binance": 1010.6667,
  "binancePrecios": [
-  1055.0,
-  1011.0,
+  1012.0,
+  1010.0,
   1010.0
  ],
  "bcv": 879.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.583157,
- "descuento": 39,
- "actualizado": "2026-10-15T13:10:56+00:00",
+ "factor": 0.574816,
+ "descuento": 40,
+ "actualizado": "2026-10-15T13:31:22+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1055.0,
-   "anunciante": "NexxusGlobalTradeP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1011.0,
-   "anunciante": "被放逐的狐狸",
+   "precio": 1012.0,
+   "anunciante": "VanguardGroup_",
    "promocionado": false
   },
   {
@@ -30,18 +25,18 @@
    "promocionado": false
   },
   {
-   "precio": 1009.5,
-   "anunciante": "Smolder-",
-   "promocionado": false
-  },
-  {
-   "precio": 1009.5,
-   "anunciante": "GAMBINO-",
+   "precio": 1010.0,
+   "anunciante": "被放逐的狐狸",
    "promocionado": false
   },
   {
    "precio": 1009.5,
    "anunciante": "GoldenLion_",
+   "promocionado": false
+  },
+  {
+   "precio": 1009.1,
+   "anunciante": "GAMBINO-",
    "promocionado": false
   },
   {
@@ -53,8 +48,13 @@
    "precio": 1009.0,
    "anunciante": "MogoshopsInvestments",
    "promocionado": false
+  },
+  {
+   "precio": 1007.501,
+   "anunciante": "hess182",
+   "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-15T13:10:56+00:00",
- "bcvActualizado": "2026-10-15T13:10:56+00:00"
+ "binanceActualizado": "2026-10-15T13:31:22+00:00",
+ "bcvActualizado": "2026-10-15T13:31:22+00:00"
 }
