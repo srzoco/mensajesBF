@@ -1,60 +1,60 @@
 {
- "revisado": "2026-10-14T13:25:36+00:00",
- "binance": 1012.2367,
+ "revisado": "2026-10-15T13:03:04+00:00",
+ "binance": 1022.3333,
  "binancePrecios": [
-  1015.0,
-  1011.51,
-  1010.2
+  1045.0,
+  1011.0,
+  1011.0
  ],
- "bcv": 877.9023,
+ "bcv": 879.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.576509,
- "descuento": 40,
- "actualizado": "2026-10-14T13:25:36+00:00",
+ "factor": 0.581451,
+ "descuento": 39,
+ "actualizado": "2026-10-15T13:03:04+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1015.0,
+   "precio": 1045.0,
    "anunciante": "NexxusGlobalTradeP2P",
    "promocionado": false
   },
   {
-   "precio": 1011.51,
-   "anunciante": "oscaargonzalez",
+   "precio": 1011.0,
+   "anunciante": "被放逐的狐狸",
    "promocionado": false
   },
   {
-   "precio": 1010.2,
-   "anunciante": "Vitatech",
+   "precio": 1011.0,
+   "anunciante": "安全与信任",
+   "promocionado": false
+  },
+  {
+   "precio": 1010.15,
+   "anunciante": "Trust-Broker",
    "promocionado": false
   },
   {
    "precio": 1010.0,
-   "anunciante": "VZLAMundialista",
+   "anunciante": "User-7f5ee",
    "promocionado": false
   },
   {
-   "precio": 1009.0,
-   "anunciante": "Cross-26",
+   "precio": 1010.0,
+   "anunciante": "GoldenLion_",
    "promocionado": false
   },
   {
-   "precio": 1008.5,
-   "anunciante": "GAMBINO-",
+   "precio": 1010.0,
+   "anunciante": "Cambiossalome3",
    "promocionado": false
   },
   {
-   "precio": 1008.4,
-   "anunciante": "-TonySoprano-",
-   "promocionado": false
-  },
-  {
-   "precio": 1008.4,
-   "anunciante": "skilps84",
+   "precio": 1009.005,
+   "anunciante": "Trust-Broker",
    "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-14T13:25:36+00:00",
- "bcvActualizado": "2026-10-14T13:25:36+00:00"
+ "binanceActualizado": "2026-10-15T13:03:04+00:00",
+ "bcvActualizado": "2026-10-15T13:03:04+00:00"
 }
