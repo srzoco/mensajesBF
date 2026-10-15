@@ -1,27 +1,22 @@
 {
- "revisado": "2026-10-15T13:08:10+00:00",
- "binance": 1030.6233,
+ "revisado": "2026-10-15T13:10:56+00:00",
+ "binance": 1025.3333,
  "binancePrecios": [
   1055.0,
-  1025.87,
-  1011.0
+  1011.0,
+  1010.0
  ],
  "bcv": 879.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "factor": 0.586166,
+ "factor": 0.583157,
  "descuento": 39,
- "actualizado": "2026-10-15T13:08:10+00:00",
+ "actualizado": "2026-10-15T13:10:56+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
    "precio": 1055.0,
    "anunciante": "NexxusGlobalTradeP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1025.87,
-   "anunciante": "User-86e70dxz",
    "promocionado": false
   },
   {
@@ -53,8 +48,13 @@
    "precio": 1009.005,
    "anunciante": "Trust-Broker",
    "promocionado": false
+  },
+  {
+   "precio": 1009.0,
+   "anunciante": "MogoshopsInvestments",
+   "promocionado": false
   }
  ],
- "binanceActualizado": "2026-10-15T13:08:10+00:00",
- "bcvActualizado": "2026-10-15T13:08:10+00:00"
+ "binanceActualizado": "2026-10-15T13:10:56+00:00",
+ "bcvActualizado": "2026-10-15T13:10:56+00:00"
 }
