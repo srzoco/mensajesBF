@@ -1,21 +1,31 @@
 {
- "revisado": "2026-10-16T13:01:33+00:00",
- "binance": 994.912,
+ "revisado": "2026-10-16T13:09:28+00:00",
+ "binance": 995.5,
  "binancePrecios": [
-  995.0,
-  995.0,
-  994.736
+  996.0,
+  995.5,
+  995.0
  ],
- "binanceActualizado": "2026-10-16T13:01:33+00:00",
+ "binanceActualizado": "2026-10-16T13:09:28+00:00",
  "bcv": 880.1159,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-16T13:01:33+00:00",
- "factor": 0.565216,
+ "bcvActualizado": "2026-10-16T13:09:28+00:00",
+ "factor": 0.565551,
  "descuento": 41,
- "actualizado": "2026-10-16T13:01:33+00:00",
+ "actualizado": "2026-10-16T13:09:28+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
+  {
+   "precio": 996.0,
+   "anunciante": "安全与信任",
+   "promocionado": false
+  },
+  {
+   "precio": 995.5,
+   "anunciante": "DOCTOR_CAMBIO",
+   "promocionado": false
+  },
   {
    "precio": 995.0,
    "anunciante": "fanny ",
@@ -27,33 +37,23 @@
    "promocionado": false
   },
   {
-   "precio": 994.736,
-   "anunciante": "TheMEG4",
+   "precio": 995.0,
+   "anunciante": "NexusGlobalTradeP2P",
    "promocionado": false
   },
   {
-   "precio": 994.5,
-   "anunciante": "CambiosVicj",
+   "precio": 995.0,
+   "anunciante": "MICHELITA_",
    "promocionado": false
   },
   {
-   "precio": 994.05,
-   "anunciante": "KAIROS333",
-   "promocionado": false
-  },
-  {
-   "precio": 994.0,
-   "anunciante": "安全与信任",
-   "promocionado": false
-  },
-  {
-   "precio": 994.0,
+   "precio": 995.0,
    "anunciante": "wlker999",
    "promocionado": false
   },
   {
-   "precio": 994.0,
-   "anunciante": "Amaroooo",
+   "precio": 994.5,
+   "anunciante": "Snayderk",
    "promocionado": false
   }
  ]
