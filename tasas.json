@@ -1,59 +1,59 @@
 {
- "revisado": "2026-10-15T20:46:41+00:00",
- "binance": 1009.8,
+ "revisado": "2026-10-16T12:59:20+00:00",
+ "binance": 995.2293,
  "binancePrecios": [
-  1012.9,
-  1010.0,
-  1006.5
+  995.688,
+  995.0,
+  995.0
  ],
- "binanceActualizado": "2026-10-15T20:46:41+00:00",
- "bcv": 879.1225,
+ "binanceActualizado": "2026-10-16T12:59:20+00:00",
+ "bcv": 880.1159,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-15T20:46:41+00:00",
- "factor": 0.574323,
- "descuento": 40,
- "actualizado": "2026-10-15T20:46:41+00:00",
+ "bcvActualizado": "2026-10-16T12:59:20+00:00",
+ "factor": 0.565397,
+ "descuento": 41,
+ "actualizado": "2026-10-16T12:59:20+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1012.9,
-   "anunciante": "wilce84",
+   "precio": 995.688,
+   "anunciante": "P2P-549d4dwe",
    "promocionado": false
   },
   {
-   "precio": 1010.0,
-   "anunciante": "Drakter-p2p",
+   "precio": 995.0,
+   "anunciante": "fanny ",
    "promocionado": false
   },
   {
-   "precio": 1006.5,
-   "anunciante": "TOPlevelS",
-   "promocionado": false
-  },
-  {
-   "precio": 1006.0,
-   "anunciante": "Cross-26",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.51,
-   "anunciante": "azucambios",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.5,
+   "precio": 995.0,
    "anunciante": "安全与信任",
    "promocionado": false
   },
   {
-   "precio": 1005.0,
-   "anunciante": "barcelona2365",
+   "precio": 994.491,
+   "anunciante": "TheMEG4",
    "promocionado": false
   },
   {
-   "precio": 1004.51,
-   "anunciante": "RM-CAMBIOS",
+   "precio": 994.0,
+   "anunciante": "安全与信任",
+   "promocionado": false
+  },
+  {
+   "precio": 994.0,
+   "anunciante": "wlker999",
+   "promocionado": false
+  },
+  {
+   "precio": 994.0,
+   "anunciante": "El chino USDT",
+   "promocionado": false
+  },
+  {
+   "precio": 994.0,
+   "anunciante": "Amaroooo",
    "promocionado": false
   }
  ]
