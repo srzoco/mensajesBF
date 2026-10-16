@@ -1,59 +1,59 @@
 {
- "revisado": "2026-10-16T13:09:28+00:00",
- "binance": 995.5,
+ "revisado": "2026-10-16T13:28:59+00:00",
+ "binance": 997.5,
  "binancePrecios": [
-  996.0,
-  995.5,
-  995.0
+  999.0,
+  997.0,
+  996.5
  ],
- "binanceActualizado": "2026-10-16T13:09:28+00:00",
+ "binanceActualizado": "2026-10-16T13:28:59+00:00",
  "bcv": 880.1159,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-16T13:09:28+00:00",
- "factor": 0.565551,
+ "bcvActualizado": "2026-10-16T13:28:59+00:00",
+ "factor": 0.566687,
  "descuento": 41,
- "actualizado": "2026-10-16T13:09:28+00:00",
+ "actualizado": "2026-10-16T13:28:59+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
+  {
+   "precio": 999.0,
+   "anunciante": "el_que_te_detona",
+   "promocionado": false
+  },
+  {
+   "precio": 997.0,
+   "anunciante": "Palomare_Usdtrades",
+   "promocionado": false
+  },
+  {
+   "precio": 996.5,
+   "anunciante": "安全与信任",
+   "promocionado": false
+  },
+  {
+   "precio": 996.0,
+   "anunciante": "wlker999",
+   "promocionado": false
+  },
   {
    "precio": 996.0,
    "anunciante": "安全与信任",
    "promocionado": false
   },
   {
-   "precio": 995.5,
-   "anunciante": "DOCTOR_CAMBIO",
+   "precio": 995.3,
+   "anunciante": "VeranderSnel-PAY",
    "promocionado": false
   },
   {
-   "precio": 995.0,
-   "anunciante": "fanny ",
+   "precio": 995.15,
+   "anunciante": "Gustavo129",
    "promocionado": false
   },
   {
-   "precio": 995.0,
-   "anunciante": "安全与信任",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
-   "anunciante": "NexusGlobalTradeP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
-   "anunciante": "MICHELITA_",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
-   "anunciante": "wlker999",
-   "promocionado": false
-  },
-  {
-   "precio": 994.5,
-   "anunciante": "Snayderk",
+   "precio": 995.1,
+   "anunciante": "TelecambioVE",
    "promocionado": false
   }
  ]
