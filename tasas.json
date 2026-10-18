@@ -1,59 +1,59 @@
 {
- "revisado": "2026-10-17T13:19:13+00:00",
- "binance": 1007.9667,
+ "revisado": "2026-10-18T12:58:29+00:00",
+ "binance": 1002.9167,
  "binancePrecios": [
-  1008.3,
-  1008.0,
-  1007.6
+  1003.0,
+  1002.9,
+  1002.85
  ],
- "binanceActualizado": "2026-10-17T13:19:13+00:00",
+ "binanceActualizado": "2026-10-18T12:58:29+00:00",
  "bcv": 880.1159,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-17T13:19:13+00:00",
- "factor": 0.572633,
- "descuento": 40,
- "actualizado": "2026-10-17T13:19:13+00:00",
+ "bcvActualizado": "2026-10-18T12:58:29+00:00",
+ "factor": 0.569764,
+ "descuento": 41,
+ "actualizado": "2026-10-18T12:58:29+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1008.3,
-   "anunciante": "TraderSpace_RO",
+   "precio": 1003.0,
+   "anunciante": "BlackVaultt",
    "promocionado": false
   },
   {
-   "precio": 1008.0,
-   "anunciante": "GOMEZTUSOLUCION",
+   "precio": 1002.9,
+   "anunciante": "REA_PRO",
    "promocionado": false
   },
   {
-   "precio": 1007.6,
-   "anunciante": "agustinS27",
+   "precio": 1002.85,
+   "anunciante": "CAMBIOS_RAPIDOS",
    "promocionado": false
   },
   {
-   "precio": 1007.5,
-   "anunciante": "JR7722",
+   "precio": 1002.65,
+   "anunciante": "T-A-U-R-O-pro2",
    "promocionado": false
   },
   {
-   "precio": 1007.11,
-   "anunciante": "cambios_seguros-jj",
+   "precio": 1002.55,
+   "anunciante": "MaxuelTrader",
    "promocionado": false
   },
   {
-   "precio": 1007.0,
-   "anunciante": "Condor_1",
+   "precio": 1002.5,
+   "anunciante": "FUERZA_ELITE",
    "promocionado": false
   },
   {
-   "precio": 1007.0,
-   "anunciante": "elgeringa",
+   "precio": 1002.5,
+   "anunciante": "P2P-36c671sj",
    "promocionado": false
   },
   {
-   "precio": 1006.8,
-   "anunciante": "IngCryptos",
+   "precio": 1002.5,
+   "anunciante": "el_que_te_detona",
    "promocionado": false
   }
  ]
