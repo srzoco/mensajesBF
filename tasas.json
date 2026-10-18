@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-18T12:58:29+00:00",
- "binance": 1002.9167,
+ "revisado": "2026-10-18T13:19:35+00:00",
+ "binance": 1002.87,
  "binancePrecios": [
   1003.0,
-  1002.9,
-  1002.85
+  1003.0,
+  1002.61
  ],
- "binanceActualizado": "2026-10-18T12:58:29+00:00",
+ "binanceActualizado": "2026-10-18T13:19:35+00:00",
  "bcv": 880.1159,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-18T12:58:29+00:00",
- "factor": 0.569764,
+ "bcvActualizado": "2026-10-18T13:19:35+00:00",
+ "factor": 0.569737,
  "descuento": 41,
- "actualizado": "2026-10-18T12:58:29+00:00",
+ "actualizado": "2026-10-18T13:19:35+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,18 +22,18 @@
    "promocionado": false
   },
   {
-   "precio": 1002.9,
-   "anunciante": "REA_PRO",
+   "precio": 1003.0,
+   "anunciante": "ANDRERRO",
    "promocionado": false
   },
   {
-   "precio": 1002.85,
-   "anunciante": "CAMBIOS_RAPIDOS",
+   "precio": 1002.61,
+   "anunciante": "Inversiones-ADSC",
    "promocionado": false
   },
   {
-   "precio": 1002.65,
-   "anunciante": "T-A-U-R-O-pro2",
+   "precio": 1002.6,
+   "anunciante": "FUERZA_ELITE",
    "promocionado": false
   },
   {
@@ -42,18 +42,18 @@
    "promocionado": false
   },
   {
-   "precio": 1002.5,
-   "anunciante": "FUERZA_ELITE",
+   "precio": 1002.55,
+   "anunciante": "Redmagic17",
+   "promocionado": false
+  },
+  {
+   "precio": 1002.55,
+   "anunciante": "Avatar_Roku",
    "promocionado": false
   },
   {
    "precio": 1002.5,
-   "anunciante": "P2P-36c671sj",
-   "promocionado": false
-  },
-  {
-   "precio": 1002.5,
-   "anunciante": "el_que_te_detona",
+   "anunciante": "你就变得更强",
    "promocionado": false
   }
  ]
