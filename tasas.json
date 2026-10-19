@@ -1,59 +1,59 @@
 {
- "revisado": "2026-10-18T13:19:35+00:00",
- "binance": 1002.87,
+ "revisado": "2026-10-19T13:11:45+00:00",
+ "binance": 1004.7,
  "binancePrecios": [
-  1003.0,
-  1003.0,
-  1002.61
+  1008.0,
+  1003.1,
+  1003.0
  ],
- "binanceActualizado": "2026-10-18T13:19:35+00:00",
- "bcv": 880.1159,
+ "binanceActualizado": "2026-10-19T13:11:45+00:00",
+ "bcv": 881.0664,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-18T13:19:35+00:00",
- "factor": 0.569737,
- "descuento": 41,
- "actualizado": "2026-10-18T13:19:35+00:00",
+ "bcvActualizado": "2026-10-19T13:11:45+00:00",
+ "factor": 0.570161,
+ "descuento": 40,
+ "actualizado": "2026-10-19T13:11:45+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1003.0,
-   "anunciante": "BlackVaultt",
+   "precio": 1008.0,
+   "anunciante": "User-6fca1",
+   "promocionado": false
+  },
+  {
+   "precio": 1003.1,
+   "anunciante": "Bestseller",
    "promocionado": false
   },
   {
    "precio": 1003.0,
-   "anunciante": "ANDRERRO",
+   "anunciante": "Catire93",
    "promocionado": false
   },
   {
-   "precio": 1002.61,
-   "anunciante": "Inversiones-ADSC",
+   "precio": 1003.0,
+   "anunciante": "Pagos-rapidosQ",
    "promocionado": false
   },
   {
-   "precio": 1002.6,
-   "anunciante": "FUERZA_ELITE",
+   "precio": 1003.0,
+   "anunciante": "X_1234",
    "promocionado": false
   },
   {
-   "precio": 1002.55,
-   "anunciante": "MaxuelTrader",
+   "precio": 1003.0,
+   "anunciante": "INVSP",
    "promocionado": false
   },
   {
-   "precio": 1002.55,
-   "anunciante": "Redmagic17",
+   "precio": 1002.888,
+   "anunciante": "Musicoin",
    "promocionado": false
   },
   {
-   "precio": 1002.55,
-   "anunciante": "Avatar_Roku",
-   "promocionado": false
-  },
-  {
-   "precio": 1002.5,
-   "anunciante": "你就变得更强",
+   "precio": 1002.8,
+   "anunciante": "TPhillips",
    "promocionado": false
   }
  ]
