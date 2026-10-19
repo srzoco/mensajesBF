@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-19T13:11:45+00:00",
- "binance": 1004.7,
+ "revisado": "2026-10-19T13:33:12+00:00",
+ "binance": 1004.4007,
  "binancePrecios": [
   1008.0,
-  1003.1,
-  1003.0
+  1002.702,
+  1002.5
  ],
- "binanceActualizado": "2026-10-19T13:11:45+00:00",
+ "binanceActualizado": "2026-10-19T13:33:12+00:00",
  "bcv": 881.0664,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-19T13:11:45+00:00",
- "factor": 0.570161,
- "descuento": 40,
- "actualizado": "2026-10-19T13:11:45+00:00",
+ "bcvActualizado": "2026-10-19T13:33:12+00:00",
+ "factor": 0.569991,
+ "descuento": 41,
+ "actualizado": "2026-10-19T13:33:12+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,38 +22,38 @@
    "promocionado": false
   },
   {
-   "precio": 1003.1,
-   "anunciante": "Bestseller",
+   "precio": 1002.702,
+   "anunciante": "tradiven",
    "promocionado": false
   },
   {
-   "precio": 1003.0,
-   "anunciante": "Catire93",
+   "precio": 1002.5,
+   "anunciante": "RACO1504",
    "promocionado": false
   },
   {
-   "precio": 1003.0,
-   "anunciante": "Pagos-rapidosQ",
-   "promocionado": false
-  },
-  {
-   "precio": 1003.0,
-   "anunciante": "X_1234",
-   "promocionado": false
-  },
-  {
-   "precio": 1003.0,
-   "anunciante": "INVSP",
-   "promocionado": false
-  },
-  {
-   "precio": 1002.888,
-   "anunciante": "Musicoin",
-   "promocionado": false
-  },
-  {
-   "precio": 1002.8,
+   "precio": 1002.5,
    "anunciante": "TPhillips",
+   "promocionado": false
+  },
+  {
+   "precio": 1002.3,
+   "anunciante": "Money77ves",
+   "promocionado": false
+  },
+  {
+   "precio": 1002.1,
+   "anunciante": "famerica",
+   "promocionado": false
+  },
+  {
+   "precio": 1002.0,
+   "anunciante": "CRIPTO-2026",
+   "promocionado": false
+  },
+  {
+   "precio": 1002.0,
+   "anunciante": "改善ThorFinn改善",
    "promocionado": false
   }
  ]
