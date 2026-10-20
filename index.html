@@ -487,7 +487,10 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const sameDay = (iso) => { const d = new Date(iso); return !isNaN(d) && d.toDateString() === new Date().toDateString(); };
   const autoToday = () => hasTasas() && sameDay(S.tasas.actualizado);
   const overrideToday = () => !!(S.disc.manual && S.disc.date === today() && validPct(S.disc.v));
-  const discBcv = () => overrideToday() ? S.disc.v : autoToday() ? S.tasas.descuento : null;
+  // Una vez fijado el descuento del día, solo gerencia (con acceso de administradora) lo puede cambiar.
+  // Sin descuento automático hoy (falló la consulta), cualquiera puede escribirlo a mano en su equipo.
+  const fijadoHoy = () => autoToday() && !S.owner;
+  const discBcv = () => overrideToday() && !fijadoHoy() ? S.disc.v : autoToday() ? S.tasas.descuento : overrideToday() ? S.disc.v : null;
   const confirmedBcv = () => discBcv() != null;
   const discUsd = () => validPct(S.ajustes.descuentoDivisas) ? S.ajustes.descuentoDivisas : DEF.descuentoDivisas;
   const disc = () => S.moneda === 'usd' ? discUsd() : discBcv();
@@ -811,6 +814,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     $('#usd-sw').checked = S.moneda === 'usd';
     $('#usd-note').textContent = num(discUsd()) + '% de descuento · cambia el cierre del mensaje';
     const di = $('#disc');
+    const bloq = fijadoHoy(); di.readOnly = bloq; $('#disc-minus').disabled = bloq; $('#disc-plus').disabled = bloq;
     if (document.activeElement !== di) di.value = discBcv() != null ? num(discBcv()) : '';
     const ok = confirmedBcv();
     $('#disc-box').classList.toggle('pending', !ok);
@@ -827,10 +831,10 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     rates.textContent = S.owner && T.binance && T.bcv
       ? `Binance ${fmtRate(T.binance)} ÷ BCV ${fmtRate(T.bcv)} ÷ 2, menos 2 puntos\n` + linea
       : linea;
-    if (overrideToday()){
+    if (overrideToday() && !fijadoHoy()){
       setHTML(meta, `<span>Cambiado a mano en este equipo${autoToday() ? ' · automático: ' + num(S.tasas.descuento) + '%' : ''}</span>` + (autoToday() ? ' <button type="button" class="mini" data-auto>Volver al automático</button>' : '') + `<span class="sub-line">${esc(ultima)}</span>`);
     } else if (autoToday()){
-      setHTML(meta, esc(ultima));
+      setHTML(meta, '<span>Fijado para todo el día' + (S.owner ? '' : ' · solo gerencia lo cambia') + '</span><span class="sub-line">' + esc(ultima) + '</span>');
     } else {
       setHTML(meta, `<span class="alert-line">⚠️ No se actualizó hoy. Escribe el descuento a mano.</span><span class="sub-line">${esc(ultima)}</span>`);
     }
