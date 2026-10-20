@@ -1084,6 +1084,8 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
     return { sha: j.sha, json: JSON.parse(new TextDecoder().decode(bytes)) };
   }
+  // Fecha de hoy en Caracas (UTC-4): con ella el descuento queda fijado para todo el día
+  const hoyCaracas = () => new Date(Date.now() - 4 * 3600e3).toISOString().slice(0, 10);
   async function shareDisc(v){
     if (!validPct(v) || S.disc.v !== v) return;
     const tok = ghToken(); if (!tok) return;
@@ -1091,7 +1093,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     try {
       const cur = await ghGetJson('tasas.json', tok);
       const now = new Date().toISOString();
-      const next = Object.assign({}, cur.json || {}, { descuento: v, actualizado: now, revisado: now, manual: true });
+      const next = Object.assign({}, cur.json || {}, { descuento: v, actualizado: now, revisado: now, manual: true, fecha: hoyCaracas() });
       const body = { message: `Descuento a mano: ${num(v)}% (armador)`, content: b64(JSON.stringify(next, null, 1)) };
       if (cur.sha) body.sha = cur.sha;
       const p = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/tasas.json`, { method: 'PUT', headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders(tok)), body: JSON.stringify(body) });
@@ -1111,7 +1113,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     S.forcing = true; renderDisc();
     try {
       const before = (await ghGetJson('tasas.json', tok)).json;
-      const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/tasas.yml/dispatches`, { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders(tok)), body: JSON.stringify({ ref: 'main' }) });
+      const r = await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/tasas.yml/dispatches`, { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, ghHeaders(tok)), body: JSON.stringify({ ref: 'main', inputs: { forzar: 'true' } }) });
       if (r.status === 403 || r.status === 404) throw { msg: 'Tu clave necesita el permiso Actions: Read and write (o falta el archivo tasas.yml).' };
       if (!r.ok) throw { msg: 'GitHub no aceptó la solicitud (' + r.status + ').' };
       const prevRev = before && before.revisado;

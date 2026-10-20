@@ -1,10 +1,16 @@
 name: Actualizar tasas
 
 on:
+  # El reloj de GitHub suele llegar tarde (hasta una hora). El que manda es el reloj de Supabase
+  # (pg_cron), que lo dispara a las 8:15, 8:20, 8:25, 8:30 y 8:35 a. m. Estos horarios son solo respaldo.
   schedule:
-    - cron: "30 12 * * *"  # 8:30 a. m. Caracas
-    - cron: "0 13 * * *"   # 9:00 a. m. Caracas
-  workflow_dispatch: {}    # boton "Run workflow" para correrlo a mano
+    - cron: "15,25,35 12 * * *"  # 8:15, 8:25 y 8:35 a. m. Caracas
+  workflow_dispatch:
+    inputs:
+      forzar:
+        description: "Recalcular aunque el descuento de hoy ya este fijado (solo gerencia)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,18 +27,29 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Calcular descuento
+        env:
+          FORZAR: ${{ github.event.inputs.forzar }}
         run: |
           python3 - <<'PY'
           import json, math, re, ssl, urllib.request
           from datetime import datetime, timezone
 
           UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          import os, sys
+          from datetime import timedelta
           ahora = datetime.now(timezone.utc).isoformat(timespec="seconds")
+          hoy = (datetime.now(timezone.utc) - timedelta(hours=4)).date().isoformat()  # Caracas (UTC-4, sin horario de verano)
+          forzar = os.environ.get("FORZAR") == "true"
 
           try:
               prev = json.load(open("tasas.json", encoding="utf-8"))
           except Exception:
               prev = {}
+
+          # Una vez fijado el descuento del dia (automatico o a mano), no se cambia mas, salvo que gerencia lo fuerce.
+          if prev.get("fecha") == hoy and prev.get("descuento") is not None and not forzar:
+              print(f"El descuento de hoy ya esta fijado en {prev.get('descuento')}%. No se cambia.")
+              sys.exit(0)
 
           def http(url, data=None):
               body = json.dumps(data).encode() if data is not None else None
@@ -98,7 +115,7 @@ jobs:
               desc = math.floor((1 - factor) * 100 + 1e-9) - 2  # entero hacia abajo, menos 2 puntos
               if 0 <= desc <= 80:
                   out.update({"binance": binance, "binancePrecios": usados, "bcv": bcv, "fuenteBcv": fuente_bcv,
-                              "factor": round(factor, 6), "descuento": desc, "actualizado": ahora, "manual": False})
+                              "factor": round(factor, 6), "descuento": desc, "actualizado": ahora, "manual": False, "fecha": hoy})
               else:
                   errores.append(f"Descuento fuera de rango ({desc}%): no se aplico")
           out["error"] = " ; ".join(errores) or None
