@@ -3,44 +3,45 @@
 <title>Armador de mensajes Barquero</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@400;500;600;700&display=swap">
 <style id="css">
 /* Layout: mostrador de dos paneles. Lista de productos a la izquierda, el mensaje como burbuja de chat a la derecha; en teléfono, un panel a la vez con barra inferior. */
 :root{
-  --bg:#F1F3EC;
+  /* Colores de Barquero Food (los mismos de CIL): azul #001E54 y grises; el dorado se queda solo en el descuento (señal de venta) */
+  --bg:#F4F6FA;
   --surface:#FFFFFF;
-  --surface-2:#E6E9DF;
-  --ink:#1A2117;
-  --muted:#5B6555;
-  --line:#D2D7C8;
-  --accent:#2C4D2E;
+  --surface-2:#EDF0F5;
+  --ink:#0E1A33;
+  --muted:#4D5870;
+  --line:#D9DFEA;
+  --accent:#001E54;
   --accent-ink:#FFFFFF;
-  --accent-soft:#DAE5D2;
+  --accent-soft:#E5EBF5;
   --gold-bg:#F4E3B5;
   --gold-ink:#5E4005;
   --gold-line:#DDBF72;
-  --bubble:#DFEFD5;
-  --danger:#9E3526;
-  --danger-soft:#F5DCD6;
-  --shadow:rgb(20 30 18 / .08);
-  --display:"Young Serif", Georgia, "Times New Roman", serif;
-  --body:"Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bubble:#E4EDF9;
+  --danger:#A3263A;
+  --danger-soft:#FBE9EC;
+  --shadow:rgb(0 30 84 / .08);
+  --display:"Gloock", Georgia, "Times New Roman", serif;
+  --body:"Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --radius:12px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#11150F; --surface:#181D16; --surface-2:#22291F; --ink:#E6EBE1; --muted:#9BA494; --line:#323B2E;
-    --accent:#9CC58F; --accent-ink:#10170E; --accent-soft:#233220;
+    --bg:#0A1328; --surface:#111E3A; --surface-2:#1A2747; --ink:#EEF2F9; --muted:#A9B4CA; --line:#22325A;
+    --accent:#A9C2F5; --accent-ink:#001E54; --accent-soft:#1A2A50;
     --gold-bg:#382C0E; --gold-ink:#F1D48C; --gold-line:#6A5420;
-    --bubble:#1E3320; --danger:#E5907E; --danger-soft:#3A1F1A; --shadow:rgb(0 0 0 / .4);
+    --bubble:#18294A; --danger:#F29AA7; --danger-soft:#3A1D29; --shadow:rgb(0 0 0 / .4);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#11150F; --surface:#181D16; --surface-2:#22291F; --ink:#E6EBE1; --muted:#9BA494; --line:#323B2E;
-  --accent:#9CC58F; --accent-ink:#10170E; --accent-soft:#233220;
+  --bg:#0A1328; --surface:#111E3A; --surface-2:#1A2747; --ink:#EEF2F9; --muted:#A9B4CA; --line:#22325A;
+  --accent:#A9C2F5; --accent-ink:#001E54; --accent-soft:#1A2A50;
   --gold-bg:#382C0E; --gold-ink:#F1D48C; --gold-line:#6A5420;
-  --bubble:#1E3320; --danger:#E5907E; --danger-soft:#3A1F1A; --shadow:rgb(0 0 0 / .4);
+  --bubble:#18294A; --danger:#F29AA7; --danger-soft:#3A1D29; --shadow:rgb(0 0 0 / .4);
   color-scheme:dark;
 }
 html{background:var(--bg)}
@@ -413,7 +414,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const IMP = window.BarqueroImport;
 
   const HEAD = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
-  const TOP = '<title>Armador de mensajes Barquero</title>\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Young+Serif&display=swap">\n';
+  const TOP = '<title>Armador de mensajes Barquero</title>\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@400;500;600;700&display=swap">\n';
   function pageHTML(data){
     const css = document.getElementById('css').textContent;
     const code = document.getElementById('app').textContent;
