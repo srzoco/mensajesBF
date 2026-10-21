@@ -1,5 +1,11 @@
-<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.volver-cil { display: inline-block; margin-bottom: 6px; font-size: .85rem; font-weight: 600; text-decoration: none; color: inherit; opacity: .8; }
-</style></head><body>
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.fila-cil { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+.boton-tema { width: 36px; height: 36px; border-radius: 12px; border: 1.5px solid var(--line, #D9DFEA); background: var(--surface, #fff); color: var(--ink, #0E1A33); display: inline-grid; place-items: center; cursor: pointer; padding: 0; }
+.boton-tema svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.volver-cil { display: inline-block; margin-bottom: 6px; font-size: .85rem; font-weight: 600; text-decoration: none; color: inherit; opacity: .8; }
+</style>
+<!-- Botón claro/oscuro compartido con CIL (se recuerda en el teléfono para las tres herramientas) -->
+<script src="../cil/comun/tema.js?v=1"></script>
+</head><body>
 <title>Armador de mensajes Barquero</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +35,7 @@
   --radius:12px;
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
+  :root:not([data-theme="claro"]){
     --bg:#0A1328; --surface:#111E3A; --surface-2:#1A2747; --ink:#EEF2F9; --muted:#A9B4CA; --line:#22325A;
     --accent:#A9C2F5; --accent-ink:#001E54; --accent-soft:#1A2A50;
     --gold-bg:#382C0E; --gold-ink:#F1D48C; --gold-line:#6A5420;
@@ -37,7 +43,7 @@
     color-scheme:dark;
   }
 }
-:root[data-theme="dark"]{
+:root[data-theme="oscuro"]{
   --bg:#0A1328; --surface:#111E3A; --surface-2:#1A2747; --ink:#EEF2F9; --muted:#A9B4CA; --line:#22325A;
   --accent:#A9C2F5; --accent-ink:#001E54; --accent-soft:#1A2A50;
   --gold-bg:#382C0E; --gold-ink:#F1D48C; --gold-line:#6A5420;
@@ -630,7 +636,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
 <div class="wrap">
   <header class="head">
     <div>
-      <a class="volver-cil" href="../cil/">‹ Menú de CIL</a>
+      <span class="fila-cil"><a class="volver-cil" href="../cil/">‹ Menú de CIL</a>${window.BarqueroTema ? window.BarqueroTema.boton() : ''}</span>
       <p class="eyebrow">Barquero Food</p>
       <h1>Armador de mensajes</h1>
     </div>
