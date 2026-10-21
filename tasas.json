@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-20T12:46:29+00:00",
- "binance": 1005.6667,
+ "revisado": "2026-10-21T12:15:07+00:00",
+ "binance": 1006.0667,
  "binancePrecios": [
   1008.0,
-  1005.0,
-  1004.0
+  1005.1,
+  1005.1
  ],
- "binanceActualizado": "2026-10-20T12:46:29+00:00",
- "bcv": 881.8769,
+ "binanceActualizado": "2026-10-21T12:15:07+00:00",
+ "bcv": 883.3963,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-20T12:46:29+00:00",
- "factor": 0.570185,
- "descuento": 40,
- "actualizado": "2026-10-20T12:46:29+00:00",
+ "bcvActualizado": "2026-10-21T12:15:07+00:00",
+ "factor": 0.569431,
+ "descuento": 41,
+ "actualizado": "2026-10-21T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
+   "precio": 1005.1,
+   "anunciante": "Redmagic17",
+   "promocionado": false
+  },
+  {
+   "precio": 1005.1,
+   "anunciante": "Gatsby_24",
+   "promocionado": false
+  },
+  {
    "precio": 1005.0,
-   "anunciante": "被放逐的狐狸",
-   "promocionado": false
-  },
-  {
-   "precio": 1004.0,
-   "anunciante": "El chino USDT",
-   "promocionado": false
-  },
-  {
-   "precio": 1004.0,
-   "anunciante": "yuli_exchange03",
-   "promocionado": false
-  },
-  {
-   "precio": 1004.0,
-   "anunciante": "-TSxRV-",
-   "promocionado": false
-  },
-  {
-   "precio": 1003.3,
-   "anunciante": "Blank_Mind",
-   "promocionado": false
-  },
-  {
-   "precio": 1003.1,
    "anunciante": "SasukeTrader",
    "promocionado": false
   },
   {
-   "precio": 1003.1,
-   "anunciante": "Kingjvl",
+   "precio": 1005.0,
+   "anunciante": "User-df529",
+   "promocionado": false
+  },
+  {
+   "precio": 1005.0,
+   "anunciante": "活着的价值",
+   "promocionado": false
+  },
+  {
+   "precio": 1004.9,
+   "anunciante": "Blank_Mind",
+   "promocionado": false
+  },
+  {
+   "precio": 1004.65,
+   "anunciante": "FUERZA_ELITE",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-20"
+ "fecha": "2026-10-21"
 }
