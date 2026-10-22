@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-21T12:15:07+00:00",
- "binance": 1006.0667,
+ "revisado": "2026-10-22T12:15:08+00:00",
+ "binance": 1006.5087,
  "binancePrecios": [
   1008.0,
-  1005.1,
-  1005.1
+  1007.526,
+  1004.0
  ],
- "binanceActualizado": "2026-10-21T12:15:07+00:00",
- "bcv": 883.3963,
+ "binanceActualizado": "2026-10-22T12:15:08+00:00",
+ "bcv": 884.7496,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-21T12:15:07+00:00",
- "factor": 0.569431,
+ "bcvActualizado": "2026-10-22T12:15:08+00:00",
+ "factor": 0.56881,
  "descuento": 41,
- "actualizado": "2026-10-21T12:15:07+00:00",
+ "actualizado": "2026-10-22T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 1005.1,
-   "anunciante": "Redmagic17",
+   "precio": 1007.526,
+   "anunciante": "User-79502",
    "promocionado": false
   },
   {
-   "precio": 1005.1,
-   "anunciante": "Gatsby_24",
+   "precio": 1004.0,
+   "anunciante": "P2P-684b64aj",
    "promocionado": false
   },
   {
-   "precio": 1005.0,
-   "anunciante": "SasukeTrader",
+   "precio": 1003.0,
+   "anunciante": "Tejon87",
    "promocionado": false
   },
   {
-   "precio": 1005.0,
-   "anunciante": "User-df529",
+   "precio": 1003.0,
+   "anunciante": "GG-Cripto96",
    "promocionado": false
   },
   {
-   "precio": 1005.0,
-   "anunciante": "活着的价值",
+   "precio": 1003.0,
+   "anunciante": "CoorpLogistic",
    "promocionado": false
   },
   {
-   "precio": 1004.9,
+   "precio": 1002.5,
    "anunciante": "Blank_Mind",
    "promocionado": false
   },
   {
-   "precio": 1004.65,
-   "anunciante": "FUERZA_ELITE",
+   "precio": 1001.61,
+   "anunciante": "TelecambioVE",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-21"
+ "fecha": "2026-10-22"
 }
