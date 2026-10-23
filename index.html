@@ -443,7 +443,9 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     pieDivisas: 'Precios exclusivamente para pagos en: Zelle, Banesco Panamá, USDT o cash',
     descuentoDivisas: 50
   };
-  const EMOJIS = ['🧀','🥩','🍖','🐟','🦐','🐙','🫒','🍯','🥟','🔹'];
+  // Botones rápidos del editor (también se puede escribir cualquier emoji con el teclado del teléfono).
+  // No existe emoji de vainilla: se usa 🌼 (su flor) o 🍦.
+  const EMOJIS = ['🧀','🥩','🍖','🥓','🐟','🦐','🦑','🐙','🦪','🦀','🦞','🫒','🍯','🧂','🥫','🥟','🍄','🌶️','🌿','🌼','🍦','🍫','🍪','🥜','☕','🍷','🍾','🥖','🧈','🥚','🍝','🍋','🍅','🍇','🍟','🍔','🔹'];
   function today(){ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
   function sortProds(a){ return a.slice().sort((x, y) => (x.categoria || 'zzz').localeCompare(y.categoria || 'zzz', 'es') || x.nombre.localeCompare(y.nombre, 'es')); }
 
