@@ -265,6 +265,7 @@ body.usd #usd-badge{display:inline-block}
 .disc-rates{white-space:pre-line}
 </style>
 <script>window.ARMADOR_HOST="github";</script>
+<script src="../cil/config.js"></script>
 <div id="root"></div>
 <script type="application/json" id="data">{"productos":[],"ajustes":{},"importacion":null}</script>
 <script id="app">var BarqueroImport = (function(){
@@ -609,8 +610,67 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     } finally { S.busy = false; renderBusy(); }
   }
 
+  /* ---------- Gerencia con su sesión de CIL: guarda en la base de datos, sin clave de GitHub ---------- */
+  const CFG = window.BARQUERO_CONFIG || {};
+  const SB = CFG.supabaseUrl || '', SBK = CFG.supabaseKey || '';
+  const CLAVES_SES = ['barquero_sesion', 'bfcontenido_sesion'];  // la misma sesión del menú de CIL y de Contenido
+  function sesionCil(){
+    let m = null;
+    for (const k of CLAVES_SES){
+      let x = null; try { x = JSON.parse(localStorage.getItem(k) || 'null'); } catch (_){}
+      if (x && x.refresh_token && x.user && (!m || (x.expires_at || 0) > (m.expires_at || 0))) m = x;
+    }
+    return m;
+  }
+  async function tokenCil(){
+    const s = sesionCil(); if (!s || !SB) return null;
+    if ((s.expires_at || 0) - 60 > Date.now() / 1000) return s.access_token;
+    const r = await fetch(SB + '/auth/v1/token?grant_type=refresh_token', { method: 'POST', headers: { apikey: SBK, 'Content-Type': 'application/json' }, body: JSON.stringify({ refresh_token: s.refresh_token }) });
+    if (!r.ok) return null;
+    const d = await r.json();
+    const ses = { access_token: d.access_token, refresh_token: d.refresh_token, expires_at: d.expires_at || Math.floor(Date.now() / 1000) + (d.expires_in || 3600), user: { id: d.user.id, email: d.user.email } };
+    for (const k of CLAVES_SES) try { localStorage.setItem(k, JSON.stringify(ses)); } catch (_){}
+    return ses.access_token;
+  }
+  async function rpcCil(fn, args){
+    const t = await tokenCil();
+    if (!t) throw { msg: 'Tu sesión de CIL venció. Entra al menú de CIL y vuelve.' };
+    const r = await fetch(SB + '/rest/v1/rpc/' + fn, { method: 'POST', headers: { apikey: SBK, Authorization: 'Bearer ' + t, 'Content-Type': 'application/json' }, body: JSON.stringify(args || {}) });
+    const txt = await r.text(); let j = null; try { j = txt ? JSON.parse(txt) : null; } catch (_){}
+    if (!r.ok) throw { msg: (j && j.message) || 'No se pudo guardar (' + r.status + '). Intenta de nuevo.' };
+    return j;
+  }
+  // Catálogo y descuento fijado a mano, desde la base de datos (lectura pública)
+  async function leerDb(){
+    if (!SB) return null;
+    try {
+      const r = await fetch(SB + '/rest/v1/armador_datos?id=eq.1&select=datos,actualizado_en,descuento_manual,descuento_fecha,descuento_en', { headers: { apikey: SBK }, cache: 'no-store' });
+      if (!r.ok) return null;
+      return (await r.json())[0] || null;
+    } catch (_){ return null; }
+  }
+  // Descuento fijado a mano por gerencia hoy: gana sobre el automático todo el día
+  function aplicarManual(db){
+    if (db && db.descuento_fecha === hoyCaracas() && validPct(Number(db.descuento_manual)))
+      S.tasas = Object.assign({}, S.tasas || {}, { descuento: Number(db.descuento_manual), actualizado: db.descuento_en, revisado: db.descuento_en, manual: true });
+  }
+  async function dbSave(next, okMsg){
+    S.busy = true; renderBusy();
+    try {
+      S.dbVer = await rpcCil('guardar_armador', { p_datos: next, p_antes: S.dbVer || null });
+      applyData(next);
+      S.pending = null; S.edit = null;
+      renderReport(); renderAll();
+      toast(okMsg + '. Tu equipo lo verá al abrir el armador.');
+      return true;
+    } catch (e){
+      toast(e && e.msg ? e.msg : 'No se pudo conectar. Revisa la conexión.');
+      return false;
+    } finally { S.busy = false; renderBusy(); }
+  }
+
   async function publishData(next, okMsg){
-    if (HOST === 'github') return ghSave(next, okMsg);
+    if (HOST === 'github') return S.cil ? dbSave(next, okMsg) : ghSave(next, okMsg);
     if (!S.art || !S.owner){ toast('Solo la dueña del armador puede guardar cambios.'); return false; }
     S.busy = true; renderBusy(); stashUI();
     try { sessionStorage.setItem(SS_TOAST, okMsg); } catch (_){}
@@ -1074,7 +1134,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     S.disc = { v, date: today(), manual: true };
     saveDisc();
     rerenderPrices();
-    if (HOST === 'github' && S.owner && ghToken()){
+    if (HOST === 'github' && S.owner && (S.cil || ghToken())){
       clearTimeout(shareT);
       shareT = setTimeout(() => shareDisc(v), 1500);
     }
@@ -1101,6 +1161,17 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const hoyCaracas = () => new Date(Date.now() - 4 * 3600e3).toISOString().slice(0, 10);
   async function shareDisc(v){
     if (!validPct(v) || S.disc.v !== v) return;
+    if (S.cil){
+      try {
+        await rpcCil('fijar_descuento', { p_valor: v });
+        const now = new Date().toISOString();
+        S.tasas = Object.assign({}, S.tasas || {}, { descuento: v, actualizado: now, revisado: now, manual: true, fecha: hoyCaracas() });
+        S.disc = { v: null, date: null, manual: false }; saveDisc();
+        rerenderPrices();
+        toast(`${num(v)}% guardado para todo el equipo`);
+      } catch (e){ toast(e && e.msg ? e.msg : 'Se cambió solo en este equipo: no se pudo guardar para todos.'); }
+      return;
+    }
     const tok = ghToken(); if (!tok) return;
     const { owner, repo } = ghRepo();
     try {
@@ -1120,6 +1191,27 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     }
   }
   async function forceUpdate(){
+    if (S.cil){
+      S.forcing = true; renderDisc();
+      try {
+        const prevRev = S.tasas && S.tasas.revisado;
+        await rpcCil('forzar_tasas');
+        // el cálculo tarda 1 o 2 minutos en GitHub; se revisa el archivo público cada 10 segundos
+        for (let i = 0; i < 24; i++){
+          await new Promise(res => setTimeout(res, 10000));
+          await loadTasas();
+          if (S.tasas && S.tasas.revisado && S.tasas.revisado !== prevRev && !S.tasas.manual){
+            if (overrideToday() && autoToday()) { S.disc = { v: null, date: null, manual: false }; saveDisc(); }
+            rerenderPrices();
+            toast(S.tasas.error ? 'Actualizado con avisos: ' + S.tasas.error : `Tasas actualizadas: ${num(S.tasas.descuento)}%`);
+            return;
+          }
+        }
+        throw { msg: 'Tardó demasiado. Intenta de nuevo en unos minutos.' };
+      } catch (e){ toast(e && e.msg ? e.msg : 'No se pudo conectar.'); }
+      finally { S.forcing = false; $('#force').textContent = 'Actualizar tasas ahora'; renderDisc(); }
+      return;
+    }
     const tok = ghToken();
     if (!tok){ toast('Activa el acceso de administradora en Catálogo para usar este botón.'); return; }
     const { owner, repo } = ghRepo();
@@ -1268,7 +1360,9 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
 
   function renderGh(){
     if (HOST !== 'github') return;
-    $('#gh-admin').hidden = false;
+    // Gerencia entra con su sesión de CIL: no necesita la clave de GitHub
+    $('#gh-admin').hidden = !!S.cil;
+    if (S.cil) return;
     $('#gh-status').textContent = ghToken() ? 'Activo en este equipo: puedes actualizar precios y editar productos.' : 'Solo para la dueña. Tu equipo no necesita esto para armar mensajes.';
     $('#gh-out').hidden = !ghToken();
   }
@@ -1308,16 +1402,21 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   if (HOST === 'github'){
     S.owner = !!ghToken(); renderOwner();
     (async () => {
-      try {
+      const db = await leerDb();
+      if (db && db.datos){ applyData(db.datos); S.dbVer = db.actualizado_en; restoreUI(); }
+      else try {
+        // mientras nadie haya guardado en la base de datos, se lee el data.json de siempre
         const r = await fetch('data.json?v=' + Date.now(), { cache: 'no-store' });
         if (!r.ok) throw 0;
         applyData(await r.json());
         restoreUI();
       } catch (_){}
-      await loadTasas();
+      await loadTasas(); aplicarManual(db);
       S.loading = false;
       renderAll();
-      setInterval(async () => { const before = S.tasas && S.tasas.actualizado; await loadTasas(); if ((S.tasas && S.tasas.actualizado) !== before){ renderDisc(); renderPicker(); renderComposer(); renderCatalog(); } else renderDisc(); }, 5 * 60 * 1000);
+      // ¿Es alguien de gerencia con sesión de CIL en este teléfono? Entonces puede editar sin clave.
+      try { if (await tokenCil() && (await rpcCil('es_admin')) === true){ S.cil = true; S.owner = true; renderOwner(); renderGh(); renderAll(); } } catch (_){}
+      setInterval(async () => { const before = S.tasas && S.tasas.actualizado; await loadTasas(); aplicarManual(await leerDb()); if ((S.tasas && S.tasas.actualizado) !== before){ renderDisc(); renderPicker(); renderComposer(); renderCatalog(); } else renderDisc(); }, 5 * 60 * 1000);
     })();
     return;
   }
