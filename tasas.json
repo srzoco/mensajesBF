@@ -1,61 +1,61 @@
 {
- "revisado": "2026-10-24T12:15:06+00:00",
- "binance": 1003.84,
+ "revisado": "2026-10-25T12:15:07+00:00",
+ "binance": 1005.9333,
  "binancePrecios": [
-  1004.02,
-  1004.0,
-  1003.5
+  1006.0,
+  1006.0,
+  1005.8
  ],
- "binanceActualizado": "2026-10-24T12:15:06+00:00",
+ "binanceActualizado": "2026-10-25T12:15:07+00:00",
  "bcv": 886.2271,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-24T12:15:06+00:00",
- "factor": 0.566356,
+ "bcvActualizado": "2026-10-25T12:15:07+00:00",
+ "factor": 0.567537,
  "descuento": 41,
- "actualizado": "2026-10-24T12:15:06+00:00",
+ "actualizado": "2026-10-25T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1004.02,
-   "anunciante": "-TraDEOne-",
+   "precio": 1006.0,
+   "anunciante": "dasainv",
    "promocionado": false
   },
   {
-   "precio": 1004.0,
-   "anunciante": "INFINIP2P",
+   "precio": 1006.0,
+   "anunciante": "caguy",
    "promocionado": false
   },
   {
-   "precio": 1003.5,
-   "anunciante": "CriptoseguroAyM",
+   "precio": 1005.8,
+   "anunciante": "roimar35",
    "promocionado": false
   },
   {
-   "precio": 1003.0,
-   "anunciante": "改善ThorFinn改善",
+   "precio": 1005.5,
+   "anunciante": "贝HarveySpecter贝",
    "promocionado": false
   },
   {
-   "precio": 1003.0,
-   "anunciante": "TheOchoa",
+   "precio": 1005.005,
+   "anunciante": "Gustavo129",
    "promocionado": false
   },
   {
-   "precio": 1002.6,
-   "anunciante": "wizard",
+   "precio": 1005.0,
+   "anunciante": "CambiosLGZ",
    "promocionado": false
   },
   {
-   "precio": 1002.6,
-   "anunciante": "Rxjess",
+   "precio": 1005.0,
+   "anunciante": "GAleja1011",
    "promocionado": false
   },
   {
-   "precio": 1002.6,
-   "anunciante": "United_Corp_inc",
+   "precio": 1004.5,
+   "anunciante": "ELGOCHOXCHANGE31",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-24"
+ "fecha": "2026-10-25"
 }
