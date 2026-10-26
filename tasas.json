@@ -1,61 +1,61 @@
 {
- "revisado": "2026-10-25T12:15:07+00:00",
- "binance": 1005.9333,
+ "revisado": "2026-10-26T12:15:08+00:00",
+ "binance": 1006.8353,
  "binancePrecios": [
-  1006.0,
-  1006.0,
-  1005.8
+  1007.0,
+  1007.0,
+  1006.506
  ],
- "binanceActualizado": "2026-10-25T12:15:07+00:00",
+ "binanceActualizado": "2026-10-26T12:15:08+00:00",
  "bcv": 886.2271,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-25T12:15:07+00:00",
- "factor": 0.567537,
+ "bcvActualizado": "2026-10-26T12:15:08+00:00",
+ "factor": 0.568046,
  "descuento": 41,
- "actualizado": "2026-10-25T12:15:07+00:00",
+ "actualizado": "2026-10-26T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1006.0,
-   "anunciante": "dasainv",
+   "precio": 1007.0,
+   "anunciante": "Umbrella2503",
+   "promocionado": false
+  },
+  {
+   "precio": 1007.0,
+   "anunciante": "Palomare_Usdtrades",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.506,
+   "anunciante": "agustinS27",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.35,
+   "anunciante": "FUERZA_ELITE",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.32,
+   "anunciante": "Comercio_Eficiente",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.2,
+   "anunciante": "CarlosAldana_",
    "promocionado": false
   },
   {
    "precio": 1006.0,
-   "anunciante": "caguy",
+   "anunciante": "LeonFx20",
    "promocionado": false
   },
   {
-   "precio": 1005.8,
-   "anunciante": "roimar35",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.5,
-   "anunciante": "贝HarveySpecter贝",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.005,
-   "anunciante": "Gustavo129",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.0,
-   "anunciante": "CambiosLGZ",
-   "promocionado": false
-  },
-  {
-   "precio": 1005.0,
-   "anunciante": "GAleja1011",
-   "promocionado": false
-  },
-  {
-   "precio": 1004.5,
-   "anunciante": "ELGOCHOXCHANGE31",
+   "precio": 1006.0,
+   "anunciante": "Bernaaaaaaa",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-25"
+ "fecha": "2026-10-26"
 }
