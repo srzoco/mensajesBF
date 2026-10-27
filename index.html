@@ -952,7 +952,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
       return `<div class="sitem" data-id="${esc(p.id)}"><div class="sitem-top"><span class="sname">${esc(p.nombre)}</span><button type="button" class="x" data-act="rm" aria-label="Quitar ${esc(p.nombre)}">×</button></div>${chips}</div>`;
     }).join('') : '<p class="empty small">Aún no has elegido productos.</p>';
     const warn = $('#disc-warn');
-    if (e.length && d == null){ warn.innerHTML = '<span>Las tasas no se actualizaron hoy. Escribe arriba el descuento de hoy para calcular los precios.</span>'; warn.hidden = false; }
+    if (e.length && d == null && S.tasasListas !== false){ warn.innerHTML = '<span>Las tasas no se actualizaron hoy. Escribe arriba el descuento de hoy para calcular los precios.</span>'; warn.hidden = false; }
     else warn.hidden = true;
     const ta = $('#msg');
     const msg = build();
@@ -1407,6 +1407,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     // El catálogo de la última vez abre al instante; el descuento siempre llega fresco (no se guarda: debe ser el de hoy)
     const LS_CAT = 'barquero-armador-catalogo';
     try { const c = JSON.parse(localStorage.getItem(LS_CAT) || 'null'); if (c && c.datos && c.datos.productos){ applyData(c.datos); S.dbVer = c.ver || null; restoreUI(); S.loading = false; renderAll(); } } catch (_){}
+    S.tasasListas = false;  // mientras llegan, no se avisa «las tasas no se actualizaron hoy»
     (async () => {
       const [db] = await Promise.all([leerDb(), loadTasas()]);
       if (db && db.datos){ applyData(db.datos); S.dbVer = db.actualizado_en; restoreUI(); try { localStorage.setItem(LS_CAT, JSON.stringify({ datos: db.datos, ver: db.actualizado_en })); } catch (_){} }
@@ -1417,7 +1418,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
         applyData(await r.json());
         restoreUI();
       } catch (_){}
-      aplicarManual(db);
+      aplicarManual(db); S.tasasListas = true;
       S.loading = false;
       renderAll();
       // ¿Es alguien de gerencia con sesión de CIL en este teléfono? Entonces puede editar sin clave.
