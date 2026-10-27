@@ -4,6 +4,7 @@
 .volver-cil { display: inline-block; margin-bottom: 6px; font-size: .85rem; font-weight: 600; text-decoration: none; color: inherit; opacity: .8; }
 </style>
 <!-- Botón claro/oscuro compartido con CIL (se recuerda en el teléfono para las tres herramientas) -->
+<link rel="preconnect" href="https://xooofdppgnpibasambuc.supabase.co" crossorigin>
 <script src="../cil/comun/tema.js?v=1"></script>
 </head><body>
 <title>Armador de mensajes Barquero</title>
@@ -1403,9 +1404,12 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   renderGh();
   if (HOST === 'github'){
     S.owner = !!ghToken(); renderOwner();
+    // El catálogo de la última vez abre al instante; el descuento siempre llega fresco (no se guarda: debe ser el de hoy)
+    const LS_CAT = 'barquero-armador-catalogo';
+    try { const c = JSON.parse(localStorage.getItem(LS_CAT) || 'null'); if (c && c.datos && c.datos.productos){ applyData(c.datos); S.dbVer = c.ver || null; restoreUI(); S.loading = false; renderAll(); } } catch (_){}
     (async () => {
-      const db = await leerDb();
-      if (db && db.datos){ applyData(db.datos); S.dbVer = db.actualizado_en; restoreUI(); }
+      const [db] = await Promise.all([leerDb(), loadTasas()]);
+      if (db && db.datos){ applyData(db.datos); S.dbVer = db.actualizado_en; restoreUI(); try { localStorage.setItem(LS_CAT, JSON.stringify({ datos: db.datos, ver: db.actualizado_en })); } catch (_){} }
       else try {
         // mientras nadie haya guardado en la base de datos, se lee el data.json de siempre
         const r = await fetch('data.json?v=' + Date.now(), { cache: 'no-store' });
@@ -1413,7 +1417,7 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
         applyData(await r.json());
         restoreUI();
       } catch (_){}
-      await loadTasas(); aplicarManual(db);
+      aplicarManual(db);
       S.loading = false;
       renderAll();
       // ¿Es alguien de gerencia con sesión de CIL en este teléfono? Entonces puede editar sin clave.
@@ -1437,4 +1441,5 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   })();
 })();
 </script>
+<script>if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(function () {});</script>
 </body></html>
