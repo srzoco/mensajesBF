@@ -617,12 +617,14 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
   const CFG = window.BARQUERO_CONFIG || {};
   const SB = CFG.supabaseUrl || '', SBK = CFG.supabaseKey || '';
   const CLAVES_SES = ['barquero_sesion', 'bfcontenido_sesion'];  // la misma sesión del menú de CIL y de Contenido
+  // Seguridad: si quedaron sesiones de personas DISTINTAS en este teléfono, no se usa ninguna
   function sesionCil(){
-    let m = null;
+    let m = null; const us = new Set();
     for (const k of CLAVES_SES){
       let x = null; try { x = JSON.parse(localStorage.getItem(k) || 'null'); } catch (_){}
-      if (x && x.refresh_token && x.user && (!m || (x.expires_at || 0) > (m.expires_at || 0))) m = x;
+      if (x && x.refresh_token && x.user){ us.add(x.user.id); if (!m || (x.expires_at || 0) > (m.expires_at || 0)) m = x; }
     }
+    if (us.size > 1){ for (const k of CLAVES_SES) try { localStorage.removeItem(k); } catch (_){} return null; }
     return m;
   }
   async function tokenCil(){
@@ -632,6 +634,8 @@ if (typeof module !== 'undefined') module.exports = BarqueroImport;
     if (!r.ok) return null;
     const d = await r.json();
     const ses = { access_token: d.access_token, refresh_token: d.refresh_token, expires_at: d.expires_at || Math.floor(Date.now() / 1000) + (d.expires_in || 3600), user: { id: d.user.id, email: d.user.email } };
+    // si mientras tanto entró otra persona en este teléfono, no se escribe encima de su sesión
+    const ahora = sesionCil(); if (ahora && ahora.user.id !== ses.user.id) return null;
     for (const k of CLAVES_SES) try { localStorage.setItem(k, JSON.stringify(ses)); } catch (_){}
     return ses.access_token;
   }
