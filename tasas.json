@@ -1,61 +1,61 @@
 {
- "revisado": "2026-10-27T12:15:08+00:00",
- "binance": 1000.1333,
+ "revisado": "2026-10-28T12:15:08+00:00",
+ "binance": 1005.0333,
  "binancePrecios": [
-  1000.28,
-  1000.1,
-  1000.02
+  1005.5,
+  1005.0,
+  1004.6
  ],
- "binanceActualizado": "2026-10-27T12:15:08+00:00",
- "bcv": 887.302,
+ "binanceActualizado": "2026-10-28T12:15:08+00:00",
+ "bcv": 888.1183,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-27T12:15:08+00:00",
- "factor": 0.563581,
+ "bcvActualizado": "2026-10-28T12:15:08+00:00",
+ "factor": 0.565822,
  "descuento": 41,
- "actualizado": "2026-10-27T12:15:08+00:00",
+ "actualizado": "2026-10-28T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1000.28,
-   "anunciante": "JuanDelu",
+   "precio": 1005.5,
+   "anunciante": "P2P-f33a9fmf",
    "promocionado": false
   },
   {
-   "precio": 1000.1,
-   "anunciante": "doctor_zoidberg",
+   "precio": 1005.0,
+   "anunciante": "caguy",
    "promocionado": false
   },
   {
-   "precio": 1000.02,
-   "anunciante": "guamo-1",
+   "precio": 1004.6,
+   "anunciante": "IliaTopuria",
    "promocionado": false
   },
   {
-   "precio": 1000.01,
-   "anunciante": "ENVIO-COMPROBANTE",
+   "precio": 1004.53,
+   "anunciante": "LGD04",
    "promocionado": false
   },
   {
-   "precio": 1000.0,
-   "anunciante": "VeranderSnel-PAY",
+   "precio": 1004.5,
+   "anunciante": "Japv2506",
    "promocionado": false
   },
   {
-   "precio": 999.688,
-   "anunciante": "SojiroX",
+   "precio": 1004.09,
+   "anunciante": "贝DonnaPaulsen贝",
    "promocionado": false
   },
   {
-   "precio": 999.5,
-   "anunciante": "Bestseller",
+   "precio": 1004.0,
+   "anunciante": "Umbrella2503",
    "promocionado": false
   },
   {
-   "precio": 999.4,
-   "anunciante": "不會不會他不會",
+   "precio": 1004.0,
+   "anunciante": "MentalStagnums",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-27"
+ "fecha": "2026-10-28"
 }
