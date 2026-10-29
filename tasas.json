@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-29T02:31:11+00:00",
- "binance": 1006.8833,
+ "revisado": "2026-10-29T12:15:07+00:00",
+ "binance": 1005.5,
  "binancePrecios": [
   1007.0,
-  1007.0,
-  1006.65
+  1005.0,
+  1004.5
  ],
- "binanceActualizado": "2026-10-29T02:31:11+00:00",
- "bcv": 888.1183,
+ "binanceActualizado": "2026-10-29T12:15:07+00:00",
+ "bcv": 888.8909,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-29T02:31:11+00:00",
- "factor": 0.566863,
+ "bcvActualizado": "2026-10-29T12:15:07+00:00",
+ "factor": 0.565592,
  "descuento": 41,
- "actualizado": "2026-10-29T02:31:11+00:00",
+ "actualizado": "2026-10-29T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 1007.0,
-   "anunciante": "Verysafef",
+   "precio": 1005.0,
+   "anunciante": "Gatsby_24",
    "promocionado": false
   },
   {
-   "precio": 1006.65,
-   "anunciante": "RafaTorresV",
+   "precio": 1004.5,
+   "anunciante": "Comercializadora_MAC",
    "promocionado": false
   },
   {
-   "precio": 1006.4,
-   "anunciante": "Cometa07",
+   "precio": 1004.1,
+   "anunciante": "TENKA_HOLDINGS",
    "promocionado": false
   },
   {
-   "precio": 1006.0,
-   "anunciante": "catire3030",
+   "precio": 1004.005,
+   "anunciante": "Gustavo129",
    "promocionado": false
   },
   {
-   "precio": 1006.0,
-   "anunciante": "Hana_s",
+   "precio": 1004.0,
+   "anunciante": "Catire93",
    "promocionado": false
   },
   {
-   "precio": 1005.7,
-   "anunciante": "Bernaaaaaaa",
+   "precio": 1004.0,
+   "anunciante": "carliptus",
    "promocionado": false
   },
   {
-   "precio": 1005.601,
-   "anunciante": "P2P-14dd97zg",
+   "precio": 1004.0,
+   "anunciante": "Japv2506",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-28"
+ "fecha": "2026-10-29"
 }
