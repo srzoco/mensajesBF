@@ -1,18 +1,18 @@
 {
- "revisado": "2026-10-29T02:30:28+00:00",
+ "revisado": "2026-10-29T02:31:11+00:00",
  "binance": 1006.8833,
  "binancePrecios": [
   1007.0,
   1007.0,
   1006.65
  ],
- "binanceActualizado": "2026-10-29T02:30:28+00:00",
+ "binanceActualizado": "2026-10-29T02:31:11+00:00",
  "bcv": 888.1183,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-29T02:30:28+00:00",
+ "bcvActualizado": "2026-10-29T02:31:11+00:00",
  "factor": 0.566863,
  "descuento": 41,
- "actualizado": "2026-10-29T02:30:28+00:00",
+ "actualizado": "2026-10-29T02:31:11+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -47,13 +47,13 @@
    "promocionado": false
   },
   {
-   "precio": 1006.0,
-   "anunciante": "Cambiossalome3",
+   "precio": 1005.7,
+   "anunciante": "Bernaaaaaaa",
    "promocionado": false
   },
   {
-   "precio": 1005.7,
-   "anunciante": "Bernaaaaaaa",
+   "precio": 1005.601,
+   "anunciante": "P2P-14dd97zg",
    "promocionado": false
   }
  ],
