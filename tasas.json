@@ -1,61 +1,61 @@
 {
- "revisado": "2026-10-30T12:15:07+00:00",
- "binance": 996.8217,
+ "revisado": "2026-10-31T12:15:18+00:00",
+ "binance": 1000.3333,
  "binancePrecios": [
+  1002.0,
   1000.0,
-  995.311,
-  995.154
+  999.0
  ],
- "binanceActualizado": "2026-10-30T12:15:07+00:00",
+ "binanceActualizado": "2026-10-31T12:15:18+00:00",
  "bcv": 889.2553,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-10-30T12:15:07+00:00",
- "factor": 0.560481,
+ "bcvActualizado": "2026-10-31T12:15:18+00:00",
+ "factor": 0.562456,
  "descuento": 41,
- "actualizado": "2026-10-30T12:15:07+00:00",
+ "actualizado": "2026-10-31T12:15:18+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
+  {
+   "precio": 1002.0,
+   "anunciante": "JuanMoutela",
+   "promocionado": false
+  },
   {
    "precio": 1000.0,
    "anunciante": "P2P-FranciscoAmaya",
    "promocionado": false
   },
   {
-   "precio": 995.311,
-   "anunciante": "係唔係我",
+   "precio": 999.0,
+   "anunciante": "avrd_11",
    "promocionado": false
   },
   {
-   "precio": 995.154,
-   "anunciante": "_ARAGUANEY_",
+   "precio": 990.5,
+   "anunciante": "Elguaro",
    "promocionado": false
   },
   {
-   "precio": 995.1,
-   "anunciante": "-DRASIX-",
+   "precio": 990.45,
+   "anunciante": "SureXchanges",
    "promocionado": false
   },
   {
-   "precio": 995.0,
-   "anunciante": "fanny ",
+   "precio": 990.43,
+   "anunciante": "guamo-1",
    "promocionado": false
   },
   {
-   "precio": 995.0,
-   "anunciante": "Mi Desilvo ARtP",
+   "precio": 990.421,
+   "anunciante": "ConfianzaseguraP2P",
    "promocionado": false
   },
   {
-   "precio": 995.0,
-   "anunciante": "doctor_zoidberg",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
-   "anunciante": "GAMBINO-",
+   "precio": 990.411,
+   "anunciante": "LaSabiduria",
    "promocionado": false
   }
  ],
- "fecha": "2026-10-30"
+ "fecha": "2026-10-31"
 }
