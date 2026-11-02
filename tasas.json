@@ -1,18 +1,18 @@
 {
- "revisado": "2026-11-01T12:15:08+00:00",
- "binance": 990.11,
+ "revisado": "2026-11-02T12:15:08+00:00",
+ "binance": 996.7333,
  "binancePrecios": [
   1000.0,
-  985.33,
-  985.0
+  995.2,
+  995.0
  ],
- "binanceActualizado": "2026-11-01T12:15:08+00:00",
- "bcv": 889.2553,
+ "binanceActualizado": "2026-11-02T12:15:08+00:00",
+ "bcv": 889.5754,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-01T12:15:08+00:00",
- "factor": 0.556707,
- "descuento": 42,
- "actualizado": "2026-11-01T12:15:08+00:00",
+ "bcvActualizado": "2026-11-02T12:15:08+00:00",
+ "factor": 0.56023,
+ "descuento": 41,
+ "actualizado": "2026-11-02T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 985.33,
-   "anunciante": "TraderSpace_RO",
+   "precio": 995.2,
+   "anunciante": "Brawcoins",
    "promocionado": false
   },
   {
-   "precio": 985.0,
-   "anunciante": "MogoshopsInvestments",
+   "precio": 995.0,
+   "anunciante": "Inversiones-ADSC",
    "promocionado": false
   },
   {
-   "precio": 985.0,
-   "anunciante": "贝HarveySpecter贝",
+   "precio": 994.3,
+   "anunciante": "AmigoTrading",
    "promocionado": false
   },
   {
-   "precio": 985.0,
-   "anunciante": "Justcrip18",
+   "precio": 994.25,
+   "anunciante": "Legacy_OTC",
    "promocionado": false
   },
   {
-   "precio": 985.0,
-   "anunciante": "JMCrip26",
+   "precio": 994.2,
+   "anunciante": "GoldenLion_",
    "promocionado": false
   },
   {
-   "precio": 984.75,
-   "anunciante": "P2P-aeeac1yh",
+   "precio": 994.125,
+   "anunciante": "__TraderFocus__",
    "promocionado": false
   },
   {
-   "precio": 984.2,
-   "anunciante": "EL-PODER-ES-DE-DIOS",
+   "precio": 994.121,
+   "anunciante": "zoecambios_21",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-01"
+ "fecha": "2026-11-02"
 }
