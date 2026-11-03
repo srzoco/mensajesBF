@@ -1,18 +1,18 @@
 {
- "revisado": "2026-11-02T12:15:08+00:00",
- "binance": 996.7333,
+ "revisado": "2026-11-03T12:15:08+00:00",
+ "binance": 998.9933,
  "binancePrecios": [
   1000.0,
-  995.2,
-  995.0
+  999.98,
+  997.0
  ],
- "binanceActualizado": "2026-11-02T12:15:08+00:00",
- "bcv": 889.5754,
+ "binanceActualizado": "2026-11-03T12:15:08+00:00",
+ "bcv": 891.1054,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-02T12:15:08+00:00",
- "factor": 0.56023,
+ "bcvActualizado": "2026-11-03T12:15:08+00:00",
+ "factor": 0.560536,
  "descuento": 41,
- "actualizado": "2026-11-02T12:15:08+00:00",
+ "actualizado": "2026-11-03T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 995.2,
-   "anunciante": "Brawcoins",
+   "precio": 999.98,
+   "anunciante": "remPro",
+   "promocionado": false
+  },
+  {
+   "precio": 997.0,
+   "anunciante": "Rafaelalexander",
+   "promocionado": false
+  },
+  {
+   "precio": 995.6,
+   "anunciante": "lilianadhi",
+   "promocionado": false
+  },
+  {
+   "precio": 995.5,
+   "anunciante": "CambiosLGZ",
+   "promocionado": false
+  },
+  {
+   "precio": 995.1,
+   "anunciante": "WillyWonka-",
    "promocionado": false
   },
   {
    "precio": 995.0,
-   "anunciante": "Inversiones-ADSC",
+   "anunciante": "GRUPOAVILA",
    "promocionado": false
   },
   {
-   "precio": 994.3,
-   "anunciante": "AmigoTrading",
-   "promocionado": false
-  },
-  {
-   "precio": 994.25,
-   "anunciante": "Legacy_OTC",
-   "promocionado": false
-  },
-  {
-   "precio": 994.2,
-   "anunciante": "GoldenLion_",
-   "promocionado": false
-  },
-  {
-   "precio": 994.125,
-   "anunciante": "__TraderFocus__",
-   "promocionado": false
-  },
-  {
-   "precio": 994.121,
-   "anunciante": "zoecambios_21",
+   "precio": 995.0,
+   "anunciante": "TelecambioVE",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-02"
+ "fecha": "2026-11-03"
 }
