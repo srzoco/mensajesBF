@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-03T12:15:08+00:00",
- "binance": 998.9933,
+ "revisado": "2026-11-04T12:15:07+00:00",
+ "binance": 1006.5333,
  "binancePrecios": [
-  1000.0,
-  999.98,
-  997.0
+  1006.6,
+  1006.5,
+  1006.5
  ],
- "binanceActualizado": "2026-11-03T12:15:08+00:00",
- "bcv": 891.1054,
+ "binanceActualizado": "2026-11-04T12:15:07+00:00",
+ "bcv": 893.2173,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-03T12:15:08+00:00",
- "factor": 0.560536,
+ "bcvActualizado": "2026-11-04T12:15:07+00:00",
+ "factor": 0.563431,
  "descuento": 41,
- "actualizado": "2026-11-03T12:15:08+00:00",
+ "actualizado": "2026-11-04T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1000.0,
-   "anunciante": "P2P-FranciscoAmaya",
-   "promocionado": false
-  },
-  {
-   "precio": 999.98,
-   "anunciante": "remPro",
-   "promocionado": false
-  },
-  {
-   "precio": 997.0,
-   "anunciante": "Rafaelalexander",
-   "promocionado": false
-  },
-  {
-   "precio": 995.6,
-   "anunciante": "lilianadhi",
-   "promocionado": false
-  },
-  {
-   "precio": 995.5,
-   "anunciante": "CambiosLGZ",
-   "promocionado": false
-  },
-  {
-   "precio": 995.1,
-   "anunciante": "WillyWonka-",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
-   "anunciante": "GRUPOAVILA",
-   "promocionado": false
-  },
-  {
-   "precio": 995.0,
+   "precio": 1006.6,
    "anunciante": "TelecambioVE",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.5,
+   "anunciante": "Money77ves",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.5,
+   "anunciante": "贝HarveySpecter贝",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.3,
+   "anunciante": "NexusPremiun",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.0,
+   "anunciante": "Umbrella2503",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.0,
+   "anunciante": "被放逐的狐狸",
+   "promocionado": false
+  },
+  {
+   "precio": 1006.0,
+   "anunciante": "SasukeTrader",
+   "promocionado": false
+  },
+  {
+   "precio": 1005.85,
+   "anunciante": "贝DonnaPaulsen贝",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-03"
+ "fecha": "2026-11-04"
 }
