@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-05T12:15:08+00:00",
- "binance": 1010.3333,
+ "revisado": "2026-11-06T12:15:06+00:00",
+ "binance": 1015.0333,
  "binancePrecios": [
-  1010.6,
-  1010.25,
-  1010.15
+  1015.6,
+  1015.5,
+  1014.0
  ],
- "binanceActualizado": "2026-11-05T12:15:08+00:00",
- "bcv": 894.8876,
+ "binanceActualizado": "2026-11-06T12:15:06+00:00",
+ "bcv": 896.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-05T12:15:08+00:00",
- "factor": 0.564503,
+ "bcvActualizado": "2026-11-06T12:15:06+00:00",
+ "factor": 0.566347,
  "descuento": 41,
- "actualizado": "2026-11-05T12:15:08+00:00",
+ "actualizado": "2026-11-06T12:15:06+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1010.6,
+   "precio": 1015.6,
+   "anunciante": "SasukeTrader",
+   "promocionado": false
+  },
+  {
+   "precio": 1015.5,
+   "anunciante": "安全与信任",
+   "promocionado": false
+  },
+  {
+   "precio": 1014.0,
    "anunciante": "Escocrida",
    "promocionado": false
   },
   {
-   "precio": 1010.25,
-   "anunciante": "贝HarveySpecter贝",
+   "precio": 1013.02,
+   "anunciante": "Coin_usdt",
    "promocionado": false
   },
   {
-   "precio": 1010.15,
-   "anunciante": "EL-EXTRANJERO",
+   "precio": 1012.0,
+   "anunciante": "PirateJay",
    "promocionado": false
   },
   {
-   "precio": 1010.123,
-   "anunciante": "NexusPremiun",
+   "precio": 1012.0,
+   "anunciante": "JoseGalindez",
    "promocionado": false
   },
   {
-   "precio": 1010.122,
-   "anunciante": "Justcrip18",
+   "precio": 1012.0,
+   "anunciante": "TrustyRetriever",
    "promocionado": false
   },
   {
-   "precio": 1010.1,
-   "anunciante": "FERRARI_F40",
-   "promocionado": false
-  },
-  {
-   "precio": 1010.001,
-   "anunciante": "BULL PAY VE",
-   "promocionado": false
-  },
-  {
-   "precio": 1010.0,
-   "anunciante": "P2P-2dc23b9z",
+   "precio": 1011.5,
+   "anunciante": "Cachy13Usdt",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-05"
+ "fecha": "2026-11-06"
 }
