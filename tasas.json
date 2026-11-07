@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-06T12:15:06+00:00",
- "binance": 1015.0333,
+ "revisado": "2026-11-07T12:15:09+00:00",
+ "binance": 1024.9333,
  "binancePrecios": [
-  1015.6,
-  1015.5,
-  1014.0
+  1025.0,
+  1025.0,
+  1024.8
  ],
- "binanceActualizado": "2026-11-06T12:15:06+00:00",
+ "binanceActualizado": "2026-11-07T12:15:09+00:00",
  "bcv": 896.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-06T12:15:06+00:00",
- "factor": 0.566347,
- "descuento": 41,
- "actualizado": "2026-11-06T12:15:06+00:00",
+ "bcvActualizado": "2026-11-07T12:15:09+00:00",
+ "factor": 0.571871,
+ "descuento": 40,
+ "actualizado": "2026-11-07T12:15:09+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1015.6,
-   "anunciante": "SasukeTrader",
+   "precio": 1025.0,
+   "anunciante": "PsicoCash",
    "promocionado": false
   },
   {
-   "precio": 1015.5,
-   "anunciante": "安全与信任",
+   "precio": 1025.0,
+   "anunciante": "Comercializadora_MAC",
    "promocionado": false
   },
   {
-   "precio": 1014.0,
-   "anunciante": "Escocrida",
+   "precio": 1024.8,
+   "anunciante": "IngCryptos",
    "promocionado": false
   },
   {
-   "precio": 1013.02,
-   "anunciante": "Coin_usdt",
+   "precio": 1024.7,
+   "anunciante": "CHATGPTP2P",
    "promocionado": false
   },
   {
-   "precio": 1012.0,
-   "anunciante": "PirateJay",
+   "precio": 1024.7,
+   "anunciante": "DOCTOR_CAMBIO",
    "promocionado": false
   },
   {
-   "precio": 1012.0,
-   "anunciante": "JoseGalindez",
+   "precio": 1024.65,
+   "anunciante": "securitylc",
    "promocionado": false
   },
   {
-   "precio": 1012.0,
-   "anunciante": "TrustyRetriever",
+   "precio": 1024.3,
+   "anunciante": "THE_BOSS_962",
    "promocionado": false
   },
   {
-   "precio": 1011.5,
-   "anunciante": "Cachy13Usdt",
+   "precio": 1024.211,
+   "anunciante": "PuenteDigital",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-06"
+ "fecha": "2026-11-07"
 }
