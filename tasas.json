@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-07T12:15:09+00:00",
- "binance": 1024.9333,
+ "revisado": "2026-11-08T12:15:08+00:00",
+ "binance": 1036.069,
  "binancePrecios": [
-  1025.0,
-  1025.0,
-  1024.8
+  1036.2,
+  1036.007,
+  1036.0
  ],
- "binanceActualizado": "2026-11-07T12:15:09+00:00",
+ "binanceActualizado": "2026-11-08T12:15:08+00:00",
  "bcv": 896.1225,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-07T12:15:09+00:00",
- "factor": 0.571871,
+ "bcvActualizado": "2026-11-08T12:15:08+00:00",
+ "factor": 0.578084,
  "descuento": 40,
- "actualizado": "2026-11-07T12:15:09+00:00",
+ "actualizado": "2026-11-08T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1025.0,
-   "anunciante": "PsicoCash",
-   "promocionado": false
-  },
-  {
-   "precio": 1025.0,
-   "anunciante": "Comercializadora_MAC",
-   "promocionado": false
-  },
-  {
-   "precio": 1024.8,
-   "anunciante": "IngCryptos",
-   "promocionado": false
-  },
-  {
-   "precio": 1024.7,
-   "anunciante": "CHATGPTP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1024.7,
-   "anunciante": "DOCTOR_CAMBIO",
-   "promocionado": false
-  },
-  {
-   "precio": 1024.65,
-   "anunciante": "securitylc",
-   "promocionado": false
-  },
-  {
-   "precio": 1024.3,
+   "precio": 1036.2,
    "anunciante": "THE_BOSS_962",
    "promocionado": false
   },
   {
-   "precio": 1024.211,
-   "anunciante": "PuenteDigital",
+   "precio": 1036.007,
+   "anunciante": "TOPlevelS",
+   "promocionado": false
+  },
+  {
+   "precio": 1036.0,
+   "anunciante": "TheOchoa",
+   "promocionado": false
+  },
+  {
+   "precio": 1036.0,
+   "anunciante": "黑块黑块",
+   "promocionado": false
+  },
+  {
+   "precio": 1035.557,
+   "anunciante": "nachar007",
+   "promocionado": false
+  },
+  {
+   "precio": 1035.2,
+   "anunciante": "REA_PRO",
+   "promocionado": false
+  },
+  {
+   "precio": 1035.2,
+   "anunciante": "User-95450",
+   "promocionado": false
+  },
+  {
+   "precio": 1035.1,
+   "anunciante": "VISÓN CRIPTØ",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-07"
+ "fecha": "2026-11-08"
 }
