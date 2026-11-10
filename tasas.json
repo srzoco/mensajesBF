@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-09T12:15:07+00:00",
- "binance": 1035.2167,
+ "revisado": "2026-11-10T12:15:09+00:00",
+ "binance": 1056.1667,
  "binancePrecios": [
-  1037.0,
-  1034.5,
-  1034.15
+  1056.5,
+  1056.0,
+  1056.0
  ],
- "binanceActualizado": "2026-11-09T12:15:07+00:00",
- "bcv": 897.5383,
+ "binanceActualizado": "2026-11-10T12:15:09+00:00",
+ "bcv": 899.2705,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-09T12:15:07+00:00",
- "factor": 0.576698,
- "descuento": 40,
- "actualizado": "2026-11-09T12:15:07+00:00",
+ "bcvActualizado": "2026-11-10T12:15:09+00:00",
+ "factor": 0.587235,
+ "descuento": 39,
+ "actualizado": "2026-11-10T12:15:09+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1037.0,
-   "anunciante": "Godisgift",
+   "precio": 1056.5,
+   "anunciante": "WillyWonka-",
    "promocionado": false
   },
   {
-   "precio": 1034.5,
-   "anunciante": "上天保佑",
+   "precio": 1056.0,
+   "anunciante": "-TSxRV-",
    "promocionado": false
   },
   {
-   "precio": 1034.15,
-   "anunciante": "Don-Cangrejo",
+   "precio": 1056.0,
+   "anunciante": "黑块黑块",
    "promocionado": false
   },
   {
-   "precio": 1034.1,
-   "anunciante": "GAMBINO-",
+   "precio": 1055.65,
+   "anunciante": "FlashRaid",
    "promocionado": false
   },
   {
-   "precio": 1034.1,
-   "anunciante": "改善ThorFinn改善",
+   "precio": 1055.6,
+   "anunciante": "CriptoseguroAyM",
    "promocionado": false
   },
   {
-   "precio": 1034.05,
-   "anunciante": "CRIPTO-2026",
+   "precio": 1055.55,
+   "anunciante": "DanielAlex_01",
    "promocionado": false
   },
   {
-   "precio": 1034.05,
-   "anunciante": "kikediaz02",
+   "precio": 1055.2,
+   "anunciante": "Amaev_cripto",
    "promocionado": false
   },
   {
-   "precio": 1034.002,
-   "anunciante": "永不放棄",
+   "precio": 1055.05,
+   "anunciante": "Anyelo",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-09"
+ "fecha": "2026-11-10"
 }
