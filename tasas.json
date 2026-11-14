@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-13T12:15:08+00:00",
- "binance": 1074.4667,
+ "revisado": "2026-11-14T12:15:08+00:00",
+ "binance": 1072.337,
  "binancePrecios": [
-  1075.4,
-  1075.0,
-  1073.0
+  1073.01,
+  1072.001,
+  1072.0
  ],
- "binanceActualizado": "2026-11-13T12:15:08+00:00",
+ "binanceActualizado": "2026-11-14T12:15:08+00:00",
  "bcv": 911.6243,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-13T12:15:08+00:00",
- "factor": 0.589314,
+ "bcvActualizado": "2026-11-14T12:15:08+00:00",
+ "factor": 0.588146,
  "descuento": 39,
- "actualizado": "2026-11-13T12:15:08+00:00",
+ "actualizado": "2026-11-14T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1075.4,
-   "anunciante": "moicris22_YPA",
+   "precio": 1073.01,
+   "anunciante": "AndradeGasconTITULAR",
    "promocionado": false
   },
   {
-   "precio": 1075.0,
-   "anunciante": "JJRS_GAGD",
+   "precio": 1072.001,
+   "anunciante": "JHcambios97",
    "promocionado": false
   },
   {
-   "precio": 1073.0,
-   "anunciante": "IMPERIo2021",
+   "precio": 1072.0,
+   "anunciante": "PagoYucuta",
    "promocionado": false
   },
   {
-   "precio": 1073.0,
-   "anunciante": "azulexchange",
+   "precio": 1072.0,
+   "anunciante": "FRANCCOS",
    "promocionado": false
   },
   {
-   "precio": 1072.5,
-   "anunciante": "Yonathanh3",
+   "precio": 1072.0,
+   "anunciante": "P2P-7c4a10km",
    "promocionado": false
   },
   {
-   "precio": 1072.202,
-   "anunciante": "贝HarveySpecter贝",
+   "precio": 1071.8,
+   "anunciante": "PagoInstantaneoP2P",
    "promocionado": false
   },
   {
-   "precio": 1072.2,
-   "anunciante": "蛋糕是个谎言",
+   "precio": 1071.671,
+   "anunciante": "VENTASJM",
    "promocionado": false
   },
   {
-   "precio": 1072.18,
-   "anunciante": "TekaTrade",
+   "precio": 1071.602,
+   "anunciante": "AllDayTrade",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-13"
+ "fecha": "2026-11-14"
 }
