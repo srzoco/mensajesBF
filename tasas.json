@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-14T12:15:08+00:00",
- "binance": 1072.337,
+ "revisado": "2026-11-15T12:15:08+00:00",
+ "binance": 1072.7253,
  "binancePrecios": [
-  1073.01,
-  1072.001,
-  1072.0
+  1073.5,
+  1072.57,
+  1072.106
  ],
- "binanceActualizado": "2026-11-14T12:15:08+00:00",
+ "binanceActualizado": "2026-11-15T12:15:08+00:00",
  "bcv": 911.6243,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-14T12:15:08+00:00",
- "factor": 0.588146,
+ "bcvActualizado": "2026-11-15T12:15:08+00:00",
+ "factor": 0.588359,
  "descuento": 39,
- "actualizado": "2026-11-14T12:15:08+00:00",
+ "actualizado": "2026-11-15T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1073.01,
-   "anunciante": "AndradeGasconTITULAR",
+   "precio": 1073.5,
+   "anunciante": "el_que_te_detona",
    "promocionado": false
   },
   {
-   "precio": 1072.001,
-   "anunciante": "JHcambios97",
+   "precio": 1072.57,
+   "anunciante": "ELGRANG",
+   "promocionado": false
+  },
+  {
+   "precio": 1072.106,
+   "anunciante": "AM_BovedaActiva",
+   "promocionado": false
+  },
+  {
+   "precio": 1072.1,
+   "anunciante": "尺-ROMA",
    "promocionado": false
   },
   {
    "precio": 1072.0,
-   "anunciante": "PagoYucuta",
+   "anunciante": "Fast Cash ",
    "promocionado": false
   },
   {
    "precio": 1072.0,
-   "anunciante": "FRANCCOS",
+   "anunciante": "Enmanuel91",
    "promocionado": false
   },
   {
-   "precio": 1072.0,
-   "anunciante": "P2P-7c4a10km",
+   "precio": 1071.999,
+   "anunciante": "Tepagofast192",
    "promocionado": false
   },
   {
-   "precio": 1071.8,
-   "anunciante": "PagoInstantaneoP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1071.671,
-   "anunciante": "VENTASJM",
-   "promocionado": false
-  },
-  {
-   "precio": 1071.602,
-   "anunciante": "AllDayTrade",
+   "precio": 1071.9,
+   "anunciante": "jaaz",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-14"
+ "fecha": "2026-11-15"
 }
