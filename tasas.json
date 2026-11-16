@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-15T12:15:08+00:00",
- "binance": 1072.7253,
+ "revisado": "2026-11-16T12:15:08+00:00",
+ "binance": 1079.995,
  "binancePrecios": [
-  1073.5,
-  1072.57,
-  1072.106
+  1085.0,
+  1081.985,
+  1073.0
  ],
- "binanceActualizado": "2026-11-15T12:15:08+00:00",
- "bcv": 911.6243,
+ "binanceActualizado": "2026-11-16T12:15:08+00:00",
+ "bcv": 914.0218,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-15T12:15:08+00:00",
- "factor": 0.588359,
- "descuento": 39,
- "actualizado": "2026-11-15T12:15:08+00:00",
+ "bcvActualizado": "2026-11-16T12:15:08+00:00",
+ "factor": 0.590793,
+ "descuento": 38,
+ "actualizado": "2026-11-16T12:15:08+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1073.5,
-   "anunciante": "el_que_te_detona",
+   "precio": 1085.0,
+   "anunciante": "Col-Primavera",
    "promocionado": false
   },
   {
-   "precio": 1072.57,
-   "anunciante": "ELGRANG",
+   "precio": 1081.985,
+   "anunciante": "KaterinaB_76",
    "promocionado": false
   },
   {
-   "precio": 1072.106,
-   "anunciante": "AM_BovedaActiva",
+   "precio": 1073.0,
+   "anunciante": "maferalvz",
    "promocionado": false
   },
   {
-   "precio": 1072.1,
-   "anunciante": "尺-ROMA",
+   "precio": 1073.0,
+   "anunciante": "PsicoCash",
    "promocionado": false
   },
   {
-   "precio": 1072.0,
-   "anunciante": "Fast Cash ",
+   "precio": 1073.0,
+   "anunciante": "Inversiones-ADSC",
    "promocionado": false
   },
   {
-   "precio": 1072.0,
-   "anunciante": "Enmanuel91",
+   "precio": 1072.789,
+   "anunciante": "TOPlevelS",
    "promocionado": false
   },
   {
-   "precio": 1071.999,
-   "anunciante": "Tepagofast192",
+   "precio": 1072.75,
+   "anunciante": "Comercializadora_MAC",
    "promocionado": false
   },
   {
-   "precio": 1071.9,
-   "anunciante": "jaaz",
+   "precio": 1072.65,
+   "anunciante": "PuenteDigital",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-15"
+ "fecha": "2026-11-16"
 }
