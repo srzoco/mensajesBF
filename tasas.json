@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-18T12:15:18+00:00",
- "binance": 1069.8003,
+ "revisado": "2026-11-19T12:15:13+00:00",
+ "binance": 1074.8333,
  "binancePrecios": [
-  1070.001,
-  1070.0,
-  1069.4
+  1076.0,
+  1075.0,
+  1073.5
  ],
- "binanceActualizado": "2026-11-18T12:15:18+00:00",
- "bcv": 916.6477,
+ "binanceActualizado": "2026-11-19T12:15:13+00:00",
+ "bcv": 917.7751,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-18T12:15:18+00:00",
- "factor": 0.58354,
+ "bcvActualizado": "2026-11-19T12:15:13+00:00",
+ "factor": 0.585565,
  "descuento": 39,
- "actualizado": "2026-11-18T12:15:18+00:00",
+ "actualizado": "2026-11-19T12:15:13+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1070.001,
-   "anunciante": "Maranto",
+   "precio": 1076.0,
+   "anunciante": "JJRS_GAGD",
    "promocionado": false
   },
   {
-   "precio": 1070.0,
+   "precio": 1075.0,
    "anunciante": "Skymecc",
    "promocionado": false
   },
   {
-   "precio": 1069.4,
-   "anunciante": "Escocrida",
+   "precio": 1073.5,
+   "anunciante": "上天保佑",
    "promocionado": false
   },
   {
-   "precio": 1069.0,
+   "precio": 1073.0,
+   "anunciante": "P2P-392a7cbt",
+   "promocionado": false
+  },
+  {
+   "precio": 1072.705,
+   "anunciante": "SEGUROS_LLC",
+   "promocionado": false
+  },
+  {
+   "precio": 1072.5,
+   "anunciante": "胡须医生",
+   "promocionado": false
+  },
+  {
+   "precio": 1072.3,
    "anunciante": "TekaTrade",
    "promocionado": false
   },
   {
-   "precio": 1069.0,
-   "anunciante": "chuchoman",
-   "promocionado": false
-  },
-  {
-   "precio": 1068.1,
-   "anunciante": "Capital_Carreno",
-   "promocionado": false
-  },
-  {
-   "precio": 1068.021,
-   "anunciante": "ConfianzaseguraP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1068.011,
-   "anunciante": "F-A-I-R-TULO",
+   "precio": 1072.1,
+   "anunciante": "尺-ROMA",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-18"
+ "fecha": "2026-11-19"
 }
