@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-20T12:15:07+00:00",
- "binance": 1065.5,
+ "revisado": "2026-11-21T12:15:07+00:00",
+ "binance": 1080.1367,
  "binancePrecios": [
-  1071.0,
-  1063.5,
-  1062.0
+  1080.2,
+  1080.11,
+  1080.1
  ],
- "binanceActualizado": "2026-11-20T12:15:07+00:00",
+ "binanceActualizado": "2026-11-21T12:15:07+00:00",
  "bcv": 918.7662,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-20T12:15:07+00:00",
- "factor": 0.579854,
- "descuento": 40,
- "actualizado": "2026-11-20T12:15:07+00:00",
+ "bcvActualizado": "2026-11-21T12:15:07+00:00",
+ "factor": 0.587819,
+ "descuento": 39,
+ "actualizado": "2026-11-21T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1071.0,
-   "anunciante": "fabirm30",
+   "precio": 1080.2,
+   "anunciante": "YenderFlashP2P",
    "promocionado": false
   },
   {
-   "precio": 1063.5,
-   "anunciante": "Fortalezacrip",
+   "precio": 1080.11,
+   "anunciante": "AndradeGasconTITULAR",
    "promocionado": false
   },
   {
-   "precio": 1062.0,
-   "anunciante": "anelisp2p",
+   "precio": 1080.1,
+   "anunciante": "Capital_Carreno",
    "promocionado": false
   },
   {
-   "precio": 1061.07,
-   "anunciante": "CarlosRoro7",
+   "precio": 1080.1,
+   "anunciante": "FRANCCOS",
    "promocionado": false
   },
   {
-   "precio": 1059.6,
-   "anunciante": "josealtu",
+   "precio": 1080.05,
+   "anunciante": "Tavo_Exchange",
    "promocionado": false
   },
   {
-   "precio": 1059.5,
-   "anunciante": "cambiojusto28",
+   "precio": 1080.05,
+   "anunciante": "_SWIFT_TRADER_",
    "promocionado": false
   },
   {
-   "precio": 1059.3,
-   "anunciante": "P2P_ELITE_VIP",
+   "precio": 1080.03,
+   "anunciante": "F-A-I-R-TULO",
    "promocionado": false
   },
   {
-   "precio": 1059.2,
-   "anunciante": "Hernansp",
+   "precio": 1080.0,
+   "anunciante": "JohnLB",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-20"
+ "fecha": "2026-11-21"
 }
