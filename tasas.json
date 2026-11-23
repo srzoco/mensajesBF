@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-22T12:15:10+00:00",
- "binance": 1093.7,
+ "revisado": "2026-11-23T12:15:07+00:00",
+ "binance": 1094.2667,
  "binancePrecios": [
-  1099.9,
-  1091.0,
-  1090.2
+  1100.0,
+  1091.5,
+  1091.3
  ],
- "binanceActualizado": "2026-11-22T12:15:10+00:00",
+ "binanceActualizado": "2026-11-23T12:15:07+00:00",
  "bcv": 918.7662,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-22T12:15:10+00:00",
- "factor": 0.5952,
+ "bcvActualizado": "2026-11-23T12:15:07+00:00",
+ "factor": 0.595509,
  "descuento": 38,
- "actualizado": "2026-11-22T12:15:10+00:00",
+ "actualizado": "2026-11-23T12:15:07+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1099.9,
-   "anunciante": "BESTMONEYC",
+   "precio": 1100.0,
+   "anunciante": "CAMBIOBEMOVIL",
+   "promocionado": false
+  },
+  {
+   "precio": 1091.5,
+   "anunciante": "Bernaaaaaaa",
+   "promocionado": false
+  },
+  {
+   "precio": 1091.3,
+   "anunciante": "ros213",
+   "promocionado": false
+  },
+  {
+   "precio": 1091.1,
+   "anunciante": "YenderFlashP2P",
+   "promocionado": false
+  },
+  {
+   "precio": 1091.015,
+   "anunciante": "ConfianzaseguraP2P",
+   "promocionado": false
+  },
+  {
+   "precio": 1091.005,
+   "anunciante": "F-A-I-R-TULO",
    "promocionado": false
   },
   {
    "precio": 1091.0,
-   "anunciante": "Daniaarilo",
+   "anunciante": "Yosi_perez",
    "promocionado": false
   },
   {
-   "precio": 1090.2,
-   "anunciante": "PagoInstantaneoP2P",
-   "promocionado": false
-  },
-  {
-   "precio": 1090.1,
-   "anunciante": "-TSxRV-",
-   "promocionado": false
-  },
-  {
-   "precio": 1090.1,
-   "anunciante": "T-A-U-R-O-pro2",
-   "promocionado": false
-  },
-  {
-   "precio": 1090.1,
-   "anunciante": "Quick Payment",
-   "promocionado": false
-  },
-  {
-   "precio": 1090.06,
-   "anunciante": "彡ReinaPepiadaCoin彡",
-   "promocionado": false
-  },
-  {
-   "precio": 1090.05,
-   "anunciante": "FUERZA_ELITE",
+   "precio": 1091.0,
+   "anunciante": "T_A_U_R_O--pro--",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-22"
+ "fecha": "2026-11-23"
 }
