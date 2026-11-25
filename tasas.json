@@ -1,61 +1,61 @@
 {
- "revisado": "2026-11-24T12:15:15+00:00",
- "binance": 1113.533,
+ "revisado": "2026-11-25T12:15:10+00:00",
+ "binance": 1104.032,
  "binancePrecios": [
-  1120.6,
-  1110.999,
-  1109.0
+  1109.0,
+  1102.0,
+  1101.096
  ],
- "binanceActualizado": "2026-11-24T12:15:15+00:00",
- "bcv": 919.8227,
+ "binanceActualizado": "2026-11-25T12:15:10+00:00",
+ "bcv": 922.5637,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-24T12:15:15+00:00",
- "factor": 0.605298,
- "descuento": 37,
- "actualizado": "2026-11-24T12:15:15+00:00",
+ "bcvActualizado": "2026-11-25T12:15:10+00:00",
+ "factor": 0.59835,
+ "descuento": 38,
+ "actualizado": "2026-11-25T12:15:10+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
-  {
-   "precio": 1120.6,
-   "anunciante": "Cambios_Really-",
-   "promocionado": false
-  },
-  {
-   "precio": 1110.999,
-   "anunciante": "P2P-5e0ef6fm",
-   "promocionado": false
-  },
   {
    "precio": 1109.0,
    "anunciante": "P2P-d40c8dju",
    "promocionado": false
   },
   {
-   "precio": 1107.0,
-   "anunciante": "angelchacon",
+   "precio": 1102.0,
+   "anunciante": "maisondorada",
    "promocionado": false
   },
   {
-   "precio": 1106.01,
-   "anunciante": "-TSxRV-",
+   "precio": 1101.096,
+   "anunciante": "CAMBIOSFLASH1109",
    "promocionado": false
   },
   {
-   "precio": 1106.0,
-   "anunciante": "Gatsby_24",
+   "precio": 1100.0,
+   "anunciante": "santiago061",
    "promocionado": false
   },
   {
-   "precio": 1105.8,
-   "anunciante": "Comercializadora_MAC",
+   "precio": 1099.5,
+   "anunciante": "EXCELENTE-",
    "promocionado": false
   },
   {
-   "precio": 1105.5,
-   "anunciante": "tomy0000",
+   "precio": 1099.0,
+   "anunciante": "贝HarveySpecter贝",
+   "promocionado": false
+  },
+  {
+   "precio": 1099.0,
+   "anunciante": "Quick Payment",
+   "promocionado": false
+  },
+  {
+   "precio": 1099.0,
+   "anunciante": "ANDRERRO",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-24"
+ "fecha": "2026-11-25"
 }
