@@ -1,24 +1,29 @@
 {
- "revisado": "2026-11-25T12:15:10+00:00",
- "binance": 1104.032,
+ "revisado": "2026-11-26T12:15:09+00:00",
+ "binance": 1105.6667,
  "binancePrecios": [
-  1109.0,
-  1102.0,
-  1101.096
+  1110.0,
+  1105.0,
+  1102.0
  ],
- "binanceActualizado": "2026-11-25T12:15:10+00:00",
- "bcv": 922.5637,
+ "binanceActualizado": "2026-11-26T12:15:09+00:00",
+ "bcv": 924.3534,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-25T12:15:10+00:00",
- "factor": 0.59835,
+ "bcvActualizado": "2026-11-26T12:15:09+00:00",
+ "factor": 0.598076,
  "descuento": 38,
- "actualizado": "2026-11-25T12:15:10+00:00",
+ "actualizado": "2026-11-26T12:15:09+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
   {
-   "precio": 1109.0,
-   "anunciante": "P2P-d40c8dju",
+   "precio": 1110.0,
+   "anunciante": "CAMBIOBEMOVIL",
+   "promocionado": false
+  },
+  {
+   "precio": 1105.0,
+   "anunciante": "Skymecc",
    "promocionado": false
   },
   {
@@ -27,35 +32,30 @@
    "promocionado": false
   },
   {
-   "precio": 1101.096,
-   "anunciante": "CAMBIOSFLASH1109",
+   "precio": 1102.0,
+   "anunciante": "Umbrella2503",
+   "promocionado": false
+  },
+  {
+   "precio": 1100.001,
+   "anunciante": "你就变得更强",
    "promocionado": false
   },
   {
    "precio": 1100.0,
-   "anunciante": "santiago061",
+   "anunciante": "TheCrackk",
    "promocionado": false
   },
   {
-   "precio": 1099.5,
-   "anunciante": "EXCELENTE-",
+   "precio": 1100.0,
+   "anunciante": "TheOchoa",
    "promocionado": false
   },
   {
-   "precio": 1099.0,
-   "anunciante": "贝HarveySpecter贝",
-   "promocionado": false
-  },
-  {
-   "precio": 1099.0,
-   "anunciante": "Quick Payment",
-   "promocionado": false
-  },
-  {
-   "precio": 1099.0,
-   "anunciante": "ANDRERRO",
+   "precio": 1100.0,
+   "anunciante": "CryptoExpressDM",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-25"
+ "fecha": "2026-11-26"
 }
