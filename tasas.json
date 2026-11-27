@@ -1,18 +1,18 @@
 {
- "revisado": "2026-11-26T12:15:09+00:00",
- "binance": 1105.6667,
+ "revisado": "2026-11-27T12:15:11+00:00",
+ "binance": 1095.9,
  "binancePrecios": [
   1110.0,
-  1105.0,
-  1102.0
+  1091.0,
+  1086.7
  ],
- "binanceActualizado": "2026-11-26T12:15:09+00:00",
- "bcv": 924.3534,
+ "binanceActualizado": "2026-11-27T12:15:11+00:00",
+ "bcv": 926.3592,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-26T12:15:09+00:00",
- "factor": 0.598076,
+ "bcvActualizado": "2026-11-27T12:15:11+00:00",
+ "factor": 0.591509,
  "descuento": 38,
- "actualizado": "2026-11-26T12:15:09+00:00",
+ "actualizado": "2026-11-27T12:15:11+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 1105.0,
-   "anunciante": "Skymecc",
+   "precio": 1091.0,
+   "anunciante": "KaterinaB_76",
    "promocionado": false
   },
   {
-   "precio": 1102.0,
-   "anunciante": "maisondorada",
+   "precio": 1086.7,
+   "anunciante": "Condor_1",
    "promocionado": false
   },
   {
-   "precio": 1102.0,
-   "anunciante": "Umbrella2503",
+   "precio": 1086.61,
+   "anunciante": "PAGOSYAAA",
    "promocionado": false
   },
   {
-   "precio": 1100.001,
-   "anunciante": "你就变得更强",
+   "precio": 1086.0,
+   "anunciante": "FAST-MD05",
    "promocionado": false
   },
   {
-   "precio": 1100.0,
-   "anunciante": "TheCrackk",
+   "precio": 1086.0,
+   "anunciante": "Nawuara",
    "promocionado": false
   },
   {
-   "precio": 1100.0,
-   "anunciante": "TheOchoa",
+   "precio": 1085.512,
+   "anunciante": "Tavo_Exchange",
    "promocionado": false
   },
   {
-   "precio": 1100.0,
-   "anunciante": "CryptoExpressDM",
+   "precio": 1085.5,
+   "anunciante": "Saw_01x",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-26"
+ "fecha": "2026-11-27"
 }
