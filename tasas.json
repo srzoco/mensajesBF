@@ -1,18 +1,18 @@
 {
- "revisado": "2026-11-27T12:15:11+00:00",
- "binance": 1095.9,
+ "revisado": "2026-11-28T12:15:09+00:00",
+ "binance": 1100.6667,
  "binancePrecios": [
   1110.0,
-  1091.0,
-  1086.7
+  1096.0,
+  1096.0
  ],
- "binanceActualizado": "2026-11-27T12:15:11+00:00",
+ "binanceActualizado": "2026-11-28T12:15:09+00:00",
  "bcv": 926.3592,
  "fuenteBcv": "ve.dolarapi.com",
- "bcvActualizado": "2026-11-27T12:15:11+00:00",
- "factor": 0.591509,
+ "bcvActualizado": "2026-11-28T12:15:09+00:00",
+ "factor": 0.594082,
  "descuento": 38,
- "actualizado": "2026-11-27T12:15:11+00:00",
+ "actualizado": "2026-11-28T12:15:09+00:00",
  "manual": false,
  "error": null,
  "binanceAnuncios": [
@@ -22,40 +22,40 @@
    "promocionado": false
   },
   {
-   "precio": 1091.0,
-   "anunciante": "KaterinaB_76",
+   "precio": 1096.0,
+   "anunciante": "azulexchange",
    "promocionado": false
   },
   {
-   "precio": 1086.7,
-   "anunciante": "Condor_1",
+   "precio": 1096.0,
+   "anunciante": "TH3K1NGP2P",
    "promocionado": false
   },
   {
-   "precio": 1086.61,
-   "anunciante": "PAGOSYAAA",
+   "precio": 1096.0,
+   "anunciante": "NewTrade",
    "promocionado": false
   },
   {
-   "precio": 1086.0,
-   "anunciante": "FAST-MD05",
+   "precio": 1096.0,
+   "anunciante": "Peallo88",
    "promocionado": false
   },
   {
-   "precio": 1086.0,
-   "anunciante": "Nawuara",
+   "precio": 1096.0,
+   "anunciante": "zoecambios_21",
    "promocionado": false
   },
   {
-   "precio": 1085.512,
-   "anunciante": "Tavo_Exchange",
+   "precio": 1095.735,
+   "anunciante": "NORTH-CAPITAL",
    "promocionado": false
   },
   {
-   "precio": 1085.5,
-   "anunciante": "Saw_01x",
+   "precio": 1095.5,
+   "anunciante": "-AMATERATSU-",
    "promocionado": false
   }
  ],
- "fecha": "2026-11-27"
+ "fecha": "2026-11-28"
 }
